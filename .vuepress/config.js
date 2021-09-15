@@ -9,7 +9,7 @@ module.exports = {
         docsRepo: 'https://gitlab.com/intave/documentation',
         docsBranch: 'master',
         docsDir: '/',
-        
+
         editLinkPattern: ':repo/-/edit/:branch/:path',
         nav: [
             {text: "Home", link: '/'},
@@ -17,13 +17,13 @@ module.exports = {
             {text: "Guide", link: '/guide/'},
         ],
         sidebar: {
-            "/mechanic/": getSideBar("mechanic", "Mechanics"),
-            "/guide/": getSideBar("guide", "Guides"),
+            "/mechanic/": [sidebarMap("mechanic", "Mechanics")],
+            "/guide/": ["", sidebarMap("guide", "i", "For Intave"), sidebarMap("guide", "e", "For plugins")],
         }
     }
 }
 
-function getSideBar(folder, title) {
+function sidebarMap(folder, prefix, title) {
     const extension = [".md"];
   
     const files = fs
@@ -31,9 +31,10 @@ function getSideBar(folder, title) {
       .filter(
         (item) =>
           item.toLowerCase() != "readme.md" &&
+          item.toLowerCase().startsWith(prefix) &&
           fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
           extension.includes(path.extname(item))
       );
   
-    return [{ title: title, children: ["", ...files] }];
+    return { title: title, children: [...files] };
   }
