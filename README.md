@@ -2,7 +2,7 @@
 home: true
 heroText: Intave
 tagline: Documentation, guides and mechanics
-actionText: Setup
-actionLink: /guide/
-footer: Edit this page on https://github.com/intave | CC BY 4.0
+actionText: Get started
+actionLink: /guide/getting-started
+footer: Lincensed under CC BY 4.0
 ---
