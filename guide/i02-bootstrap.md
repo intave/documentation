@@ -13,4 +13,4 @@ Download the bootstrap jar (https://intave.de/go/bootstrap), put it in your plug
 Make sure nobody has access to your `authentication key`, otherwise generate a new authentication key.
 You are responsible for possible damages.
 
-Have some :cookies:
+Have some :cookies:!
