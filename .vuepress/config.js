@@ -5,11 +5,12 @@ module.exports = {
     title: "Intave",
     description: "Documentation around the Intave anticheat",
     themeConfig: {
+        logo: '/assets/intave_logo.png',
         repo: 'intave/documentation',
-        docsRepo: 'https://gitlab.com/intave/documentation',
+        docsRepo: 'https://github.com/intave/documentation',
         docsBranch: 'master',
         docsDir: '/',
-
+        searchPlaceholder: 'Search...',
         editLinkPattern: ':repo/-/edit/:branch/:path',
         nav: [
             {text: "Home", link: '/'},

@@ -6,19 +6,19 @@ And it's not an issue to be inexperienced, it's the issue that a configuration b
 So, we decided to remove the concept of a cancel_vl (or later "prevention-activation") for good.
 With Intave 14.0.0, we would like to introduce a suitable and adaptive alternative, easy to understand and to work with, simplifying the entire concept to a trust factor.
 
-A trust factor is either
-:white_large_square: White
-:green_square: Green
-:yellow_square: Yellow
-:orange_square: Orange
-:red_square: Red
-:red_square: Dark-Red
+A trust factor is either<br>
+:white_large_square: White<br>
+🟩 Green<br>
+🟨 Yellow<br>
+🟧 Orange<br>
+🟥 Red<br>
+🟥 Dark-Red<br>
 and every player will have one assigned.
 
-Intave does not set the trust factor by itself, you will have to - either via access (API) or with permissions, otherwise Intave will just assign the :orange_square: Orange Trust Factor or a different given default.
-Give high-level, long-time-playing and trusted players a :yellow_square: Yellow Trust Factor.
-Only give a :green_square: Green Trust Factor to players you really can trust - e.g. players with the Badlion AntiCheat enabled.
-If a player's Ip-Address has been banned recently or is similar to a banned Ip-Address' Subnet, set a :red_square: Red or a :red_square: Dark-Red Trust Factor.
+Intave does not set the trust factor by itself, you will have to - either via access (API) or with permissions, otherwise Intave will just assign the 🟧 Orange Trust Factor or a different given default.
+Give high-level, long-time-playing and trusted players a 🟨 Yellow Trust Factor.
+Only give a 🟩 Green Trust Factor to players you really can trust - e.g. players with the Badlion AntiCheat enabled.
+If a player's Ip-Address has been banned recently or is similar to a banned Ip-Address' Subnet, set a 🟥 Red or a 🟥 Dark-Red Trust Factor.
 If you have Bedrock players on your server, give them the :white_large_square: White Trust Factor.
 
 So what does this trust factor accomplish?
