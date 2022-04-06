@@ -7,14 +7,14 @@
    **please read it before you buy**
 2. Press the `Purchase` button, this will redirect you to a payment gateway, after you completed your purchase there you
    will be redirected back to the Intave website
-3. You should now be able to <a href="/guide/i01-getting-started.html#setting-up-intave">Download Intave</a>
+3. You should now be able to [Download Intave](/guide/i01-getting-started.html#setting-up-intave)
 
 ## Setting up
 
 There are several ways to set up Intave:
 
 * Manual Installation (which this section covers)
-* <a href="/guide/i02-bootstrap.html">Intave Bootstrap</a>
+* [Intave Bootstrap](/guide/i02-bootstrap.html)
 
 ### Downloading
 
