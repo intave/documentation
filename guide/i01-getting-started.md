@@ -1,6 +1,6 @@
 # Getting started
 
-## Purchasing Intave
+## Purchasing
 
 1. Go to https://app.intave.de/purchase, on this site you will find an overview of what you are getting and a simplified
    version of what you are not allowed to do. You can find a detailed policy on https://policy.intave.de/eula
@@ -9,14 +9,14 @@
    will be redirected back to the Intave website
 3. You should now be able to <a href="/guide/i01-getting-started.html#setting-up-intave">Download Intave</a>
 
-## Setting up Intave
+## Setting up
 
 There are several ways to set up Intave:
 
 * Manual Installation (which this section covers)
 * <a href="/guide/i02-bootstrap.html">Intave Bootstrap</a>
 
-### Downloading Intave
+### Downloading
 
 1. Go to https://app.intave.de/download and download the `Latest` branch
 2. Copy the file into your `plugins` folder, please keep in mind Intave is a **Spigot** plugin not a **BungeeCord**
