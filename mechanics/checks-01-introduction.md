@@ -14,7 +14,7 @@ All checks combined should cover the entire spectrum of cheats.<br>
 
 ## How many checks are there?
 
-We have 11 checks in total, 
-[**AttackRaytrace**](/mechanics/checks-02-attackraytrace.md), **BreakSpeedLimiter**, **ClickPatterns**, **ClickSpeedLimiter**,
-**Heuristics**, **InteractionRaytrace**, **InventoryClickAnalysis**, **Physics**, **PlacementAnalysis**,
+We have 11 checks in total,
+[**AttackRaytrace**](/mechanics/checks-02-attackraytrace.md), [**BreakSpeedLimiter**](/mechanics/checks-03-breakspeedlimiter.md), **ClickPatterns**, **ClickSpeedLimiter**,
+[**Heuristics**](/mechanics/checks-06-heuristics.md), **InteractionRaytrace**, **InventoryClickAnalysis**, [**Physics**](/mechanics/checks-09-physics.md), **PlacementAnalysis**,
 **ProtocolScanner**, and **Timer**.
