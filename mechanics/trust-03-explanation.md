@@ -1,9 +1,8 @@
 # Explanation
-
 The line between cheating and legit is blurry to say the least.<br>
 In a lot of cases it even overlaps, and it's impossible to tell which is which.
 
-#### A few of the many examples: 
+#### A few of the many examples:
 - A player is not sending packets for 5 seconds - then sends them all, is that legitimate lag or the player intentionally buffering packets?
 - A player attacked another players hitbox 7 movements behind, is that automated packet buffering or just legitimate lag?
 - A player is jumping in the exact same tick when he received velocity - mitigating most of it, is that player just very, very lucky or is this automated behavior?

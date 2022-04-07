@@ -3,7 +3,7 @@
 `Name` BreakSpeedLimiter<br>
 `Coverage` FastBreak cheats<br>
 `Developers` Richy, vento, DarkAndBlue<br>
-`Since` Intave/14<br>
+`Since` Intave 14<br>
 
 ### How it works
 Intave recalculates how long a player needs to break a block, and compares the duration with the actual duration

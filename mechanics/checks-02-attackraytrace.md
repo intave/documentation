@@ -3,7 +3,7 @@
 `Name` AttackRaytrace<br>
 `Coverage` Reach and Hitbox cheats<br>
 `Developers` Richy, DarkAndBlue<br>
-`Since` Intave/14<br>
+`Since` Intave 14<br>
 
 ### How it works
 Before knowing how far a player is when attacking, you need to know where a player is - for the observer.

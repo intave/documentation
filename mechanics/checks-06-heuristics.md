@@ -3,7 +3,7 @@
 `Name` Heuristics<br>
 `Coverage` Fight/Click automation cheats<br>
 `Developers` Richy, DarkAndBlue, vento<br>
-`Since` Intave/14<br>
+`Since` Intave 14<br>
 
 ### How it works
 By analyzing player combat over longer periods (30-60 seconds), the check decides how likely a player is cheating, making it very hard to bypass and very effective long-term.<br>
