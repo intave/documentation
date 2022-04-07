@@ -19,7 +19,7 @@ module.exports = {
             {text: "Discord", link: 'https://intave.de/go/discord'},
         ],
         sidebar: {
-            "/mechanics/": ["", sidebarMap("mechanics", "c", "Configuration")],
+            "/mechanics/": ["", sidebarMap("mechanics", "c", "Configuration"), sidebarMap("mechanics", "t", "Trustfactor")],
             "/guides/": ["", sidebarMap("guides", "i", "For Intave"), sidebarMap("guides", "e", "For plugins")],
         }
     }
@@ -32,7 +32,7 @@ function sidebarMap(folder, prefix, title) {
         .readdirSync(path.join(`${__dirname}/../${folder}`))
         .filter(
             (item) =>
-                item.toLowerCase() != "readme.md" &&
+                item.toLowerCase() !== "readme.md" &&
                 item.toLowerCase().startsWith(prefix) &&
                 fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
                 extension.includes(path.extname(item))
