@@ -4,7 +4,6 @@ const path = require("path");
 module.exports = {
     title: "Intave",
     description: "Documentation around the Intave anticheat",
-    extend: '@vuepress/theme-default',
     themeConfig: {
         logo: '/assets/intave_logo.png',
         repo: 'intave/documentation',
