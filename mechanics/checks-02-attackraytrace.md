@@ -1,11 +1,12 @@
 # AttackRaytrace
 
-* `Name` AttackRaytrace<br>
-* `Coverage` Reach and hitbox cheats<br>
-* `Developers` Richy, DarkAndBlue<br>
-* `Since` Intave 14<br>
+`Name` AttackRaytrace<br>
+`Coverage` Reach and hitbox cheats<br>
+`Developers` Richy, DarkAndBlue<br>
+`Since` Intave 14<br>
 
 ## How it works
+Reach cheats allow players to hit entities further away than with vanilla Minecraft.
 
 To know how far a player is hitting, we need to know the exact positions of both the attacker and the target. To avoid
 any false positives caused by latency, we need to know the positions from the perspective of the attacker. This is a

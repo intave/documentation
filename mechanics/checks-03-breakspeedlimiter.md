@@ -1,20 +1,28 @@
 # BreakSpeedLimiter
 
 `Name` BreakSpeedLimiter<br>
-`Coverage` FastBreak cheats<br>
+`Coverage` Fastbreak cheats<br>
 `Developers` Richy, vento, DarkAndBlue<br>
 `Since` Intave 14<br>
 
 ### How it works
-Intave recalculates how long a player needs to break a block, and compares the duration with the actual duration
+
+The Minecraft protocol lets the client control block breaking. While this allows for fluent gameplay even with high
+latency, cheat client may try to abuse this: Fast break cheats allow players to break blocks faster than usual.
+
+To solve this issue, Intave calculates how long a legitimate player needs to break specific blocks. The check then
+compares the expected duration with the actual duration a player needs. Illegitimate deviations are corrected by
+canceling the block break.
 
 ### Accuracy
-This check detects deviations small deviations starting from 100ms, and lower deviations when repeatedly done
+
+This check is able to detect small deviations and gets more accurate the more data Intave collects.
 
 ### Alternatives
-To our current knowledge, no better alternative approach mitigating fast-break cheats exists.<br>
-The issue originates from a protocol decision from Mojang to have block-breaking clientside,
-which is - considering the bad internet of many client - reasonable.
+
+To our current knowledge, no better alternative approach mitigating fastbreak cheats exists.
 
 ### Issues
-None known
+
+The check might false flag legitimate players with rapid latency changes. Intave does try to account for such scenarios,
+however.
