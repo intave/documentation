@@ -15,13 +15,13 @@ Either players will complain about false positives or complain about bypasses.<b
 *Like: With three seconds as limit, cheaters can now buffer packets and 'teleport' (`3s * 20 ticks/second * ~0.4 blocks/ticks = 20 blocks`)*
 ***and** players with a weak connection will complain about being mitigated wrongfully*
 
-### The standard/old way
+## The standard/old way
 While most anti-cheats just avoid this blurry territory, some systems including older versions of Intave *solved* this by outsourcing key decisions of distinction via an easy-to-change configuration file to their respective, inexperienced customers.<br>
 This led to a massive amount of bypasses and false-positives, with a lot of customers spending **years** and a lot of money just to pinpoint the most balanced configuration values.<br>
 It **never** really works.<br>
 And Intave 14's accuracy actually contributes to even more uncertainty for us to address. 
 
-### Our way
+## Our way
 We learned two things: 
 1. customers should be excluded from the process of making anti-cheat differentiations, and
 2. different rules are required for different players.
