@@ -1,14 +1,14 @@
 # Getting started
 ## Purchase
 
-If you don't own a license for Intave yet, you can purchase one [here](https://app.intave.de/purchase). In this section,
-we will guide you through the purchase process.
+If you don't own a license for Intave yet, you should purchase one:
 
 0. Before purchasing Intave, please make yourself familiar with the [EULA](https://policy.intave.de/eula). Please note
    that you are in particular not allowed to:
 
    * Decompile, debug, leak, crack or modify Intave
    * Create a public or private test server and/or let third parties test Intave
+
 1. Visit the [purchase page](https://app.intave.de/purchase).
 2. Press the `Purchase` button. This will redirect you to our payment gateway (PayPal). After you completed your
    purchase, you will be redirected back to the Intave website.
@@ -28,7 +28,7 @@ This section covers the manual installation.
 1. If you haven't downloaded Intave yet, please do so now. Visit the [download page](https://app.intave.de/download) and
    download the `Latest` branch.
 2. Copy the `.jar` file into your server's `plugins` folder. Please keep in mind Intave is a **Spigot** plugin, not a
-   BungeeCord plugin (you can however add BungeeCord support to Intave by using [Proxy Support](/guide/i03-proxy.html))
+   BungeeCord plugin. You can add BungeeCord support to Intave by using [Proxy Support](/guide/i03-proxy.html).
 3. Start your server and Intave should load, notifying you with an error that your hardware is not verified.
 
 ### Hardware Verification
@@ -43,3 +43,9 @@ this step is a matter of two clicks.
    us immediately – your license may be in danger!** Once you have reviewed the request details, you can verify the
    machine with a simple click.
 4. Start your server once again. Now, Intave should load without any errors.
+
+### Security
+
+Please carefully consider who has access to your servers. You are responsible for the safety of your Intave license and
+may be held liable for possible damages. **If you notice any suspicious activity or leaks, please contact us
+immediately.** We can help you mitigate any fraudulent activity involving your Intave license.
