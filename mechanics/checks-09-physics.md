@@ -32,10 +32,12 @@ covered. This leads to frequent bypasses. Our simulation, on the other hand, cov
 
 ### Issues
 
-The Physics check is Intave's most accurate with only 0.01% false detections per received packet. The sheer amount of
-data processed can sometimes cause problems, however: Given ten million movements, a false positive rate of 0.01%
-will result in one thousand false positives. Intave tries to lessen the negative experience of false flags through fluid
-setbacks.
+The Physics check is Intave's most accurate with only 0.01% false detections per received packet. This translates to
+roughly one false positive per player each 10 minutes.
+
+The sheer amount of data processed can sometimes cause problems, however: Given ten million movements, a false positive
+rate of 0.01% will result in one thousand false positives. Intave tries to lessen the negative experience of false flags
+through fluid setbacks.
 
 As of May 2022, some movement features of 1.16+ are still a work in progress. You may experience some issue with these
 versions.
