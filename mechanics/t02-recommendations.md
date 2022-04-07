@@ -26,7 +26,7 @@ Servers not requiring Mojang-authenticated accounts, might consider players with
 *Note: In [intave/access](https://github.com/intave/access), you can use [TrustFactor.unsafer()](https://github.com/intave/access/blob/e212600accd7aa647fe812a586f298ce4cf7d7eb/src/main/java/de/jpx3/intave/access/player/trust/TrustFactor.java#L33) to lower a trust factor*
 
 
-## Avoid 
+## Avoid
 - Showing 👀 players their trust factor
 - Publishing 📄 your trust factor mappings/code
-- Giving new players a high (🟨 Yellow, 🟩 Green, :white_large_square: White) trustfactor
+- Giving new players a high 📈 (🟨 Yellow, 🟩 Green, :white_large_square: White) trustfactor
