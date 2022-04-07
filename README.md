@@ -3,7 +3,7 @@ home: true
 heroText: Intave
 tagline: Documentation, guides and mechanics
 actionText: Get started
-actionLink: /guides/i01-getting-started
+actionLink: /guides/i01-getting-started.html
 features:
 - title: New to Intave?
   details: This documentation is the perfect starting point for both new and experienced customers. Here you will find information about setting up Intave, configuring it, using the API and much more.
