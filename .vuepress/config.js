@@ -20,7 +20,7 @@ module.exports = {
         ],
         sidebar: {
             "/mechanics/": ["", sidebarMap("mechanics", "c", "Configuration"), sidebarMap("mechanics", "t", "Trustfactor")],
-            "/guides/": ["", sidebarMap("guides", "i", "For Intave"), sidebarMap("guides", "e", "For plugins")],
+            "/guides/": ["", sidebarMap("guides", "i", "Intave"), sidebarMap("guides", "e", "Ecosystem")],
         }
     }
 }
