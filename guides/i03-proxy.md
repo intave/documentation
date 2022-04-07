@@ -13,7 +13,7 @@ Support plugin to execute commands on your Bungeecord instance remotely from spi
 4. Enable `ipc_proxy_support` in Intave's configuration and apply your changes.
 
 ## Usage
-### Executing a Kick through Intave
+### Execute a Kick through Intave
 
 Kick a given player for a provided reason:
 
@@ -21,7 +21,7 @@ Kick a given player for a provided reason:
 
 *Example:* `execute->intave proxy proxkick {player} You were caught cheating`
 
-### Executing a Tempban through Intave
+### Execute a Tempban through Intave
 
 Temporarily ban a given player for a provided reason:
 
@@ -29,7 +29,7 @@ Temporarily ban a given player for a provided reason:
 
 *Example:* `execute->intave proxy proxtempban {player} You were caught cheating`
 
-### Executing a Ban through Intave
+### Execute a Ban through Intave
 
 Permanently ban the given player for a provided reason:
 
@@ -37,7 +37,7 @@ Permanently ban the given player for a provided reason:
 
 *Example:* `execute->intave proxy proxban {player} You were caught cheating`
 
-### Executing a Generic Command
+### Execute a Generic Command
 
 Execute a command on the proxy through a player's connection (we use the player's connection to transfer the data to
 Bungeecord):
