@@ -1,24 +1,33 @@
 # AttackRaytrace
 
-`Name` AttackRaytrace<br>
-`Coverage` Reach and Hitbox cheats<br>
-`Developers` Richy, DarkAndBlue<br>
-`Since` Intave 14<br>
+* `Name` AttackRaytrace<br>
+* `Coverage` Reach and hitbox cheats<br>
+* `Developers` Richy, DarkAndBlue<br>
+* `Since` Intave 14<br>
 
-### How it works
-Before knowing how far a player is when attacking, you need to know where a player is - for the observer.
-This is an incredibly hard task, with Intave only being the second anti-cheat to implement a feasible solution to it.
-By abusing protocol-behaviour, Intave is able to pinpoint observer entity locations with little to no deviation.
+## How it works
 
-Now we simply re-perform the initial raytrace to verify the attack/interaction.
-While this sounds quite easy, the implementation is challengingly to say the least.
+To know how far a player is hitting, we need to know the exact positions of both the attacker and the target. To avoid
+any false positives caused by latency, we need to know the positions from the perspective of the attacker. This is a
+challenging task, with Intave being the second anti-cheat to implement a feasible solution to it.
 
-### Accuracy
-Using this technique we can detect reach down to the 15th decimal, so mathematically any reach can be detected.
-Due to certain inconsistencies, we achieve a peak accuracy of 3.001 blocks, but you should be fine with that.
+By carefully playing the Minecraft protocol, Intave is able to pinpoint entity locations with little to no deviation.
+Now we can re-perform the client's raytrace to verify the attack. While this whole procedure sounds easy on paper, a
+correct implementation must solve many challenges. Additionally, commonly used mods like Optifine change certain
+relevant aspects of the game.
 
-### Alternatives
-To our current knowledge, no better alternative approach mitigating reach/hitbox cheats exists.<br>
+## Accuracy
 
-### Issues
+Using our techniques we are theoretically able to detect reach down to the 15th decimal. Due to inconsistencies in
+Minecraft and Optifine, we achieve a peak accuracy of 3.001 blocks. False positives are very unlikely. This check has
+been battle-tested on large server networks and has proven to be stable.
+
+## Alternatives
+
+There are many other approaches to detect reach. All of them fail in certain areas however: Either they fail to account
+for latency properly, causing many false positives or allowing bypasses. Or wrong calculations are used to determine
+the player's reach. To our current knowledge, no better alternative approach mitigating reach and hitbox cheats exists.
+
+## Issues
+
 [redacted until Jan. 2026]

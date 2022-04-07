@@ -1,20 +1,29 @@
 # Checks
-
 ## What is a check?
-A check is an algorithm or algorithm cluster designed to find and mitigate aspects of cheating.<br>
+
+A check is an algorithm or algorithm cluster designed to find and mitigate aspects of cheating.
+
 Each check is responsible for covering a fairly large part of the spectrum, seeking high efficiency and accuracy,
-each with a different purpose, goal and structure.<br>
-All checks combined should cover the entire spectrum of cheats.<br>
+each with a different purpose, goal and structure.
 
-## Example checks
+All checks combined should cover the entire spectrum of cheats. This leads to a cheat-free server experience.
 
-* The check **Physics** tries to find **all movement deviations**, like Fly, Speed, and Velocity
-* The check **AttackRaytrace** tries to find **all reach/hitbox cheats**
-* and the check **Heuristics** tires to find **killaura and combat related cheats**
+## What checks does Intave have?
 
-## How many checks are there?
+In total, we have 11 checks:
 
-We have 11 checks in total,
-[**AttackRaytrace**](/mechanics/checks-02-attackraytrace.md), [**BreakSpeedLimiter**](/mechanics/checks-03-breakspeedlimiter.md), **ClickPatterns**, **ClickSpeedLimiter**,
-[**Heuristics**](/mechanics/checks-06-heuristics.md), **InteractionRaytrace**, **InventoryClickAnalysis**, [**Physics**](/mechanics/checks-09-physics.md), **PlacementAnalysis**,
-**ProtocolScanner**, and **Timer**.
+* [**AttackRaytrace**](/mechanics/checks-02-attackraytrace.md): Detects all reach and hitbox cheats.
+* [**BreakSpeedLimiter**](/mechanics/checks-03-breakspeedlimiter.md): Patches FastBreak cheats
+* **ClickPatterns**
+* **ClickSpeedLimiter**
+* [**Heuristics**](/mechanics/checks-06-heuristics.md): Searches for kill aura like patterns and other combat related
+  cheats.
+* **InteractionRaytrace**
+* **InventoryClickAnalysis**
+* [**Physics**](/mechanics/checks-09-physics.md): Checks for deviations from vanilla movement like fly, speed and
+  velocity. A setback system corrects any deviation detected, mitigating any possible advantage. 
+* **PlacementAnalysis**
+* **ProtocolScanner**
+* **Timer**
+
+Together, these checks provide a strong protection for your server against any cheater.
