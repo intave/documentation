@@ -22,6 +22,11 @@ module.exports = {
             "/guides/": ["", sidebarMap("guides", "i", "Intave"), sidebarMap("guides", "e", "Ecosystem")],
         }
     },
+    markdown: {
+        extendMarkdown: md => {
+            md.use(require("markdown-it-footnote"));
+        }
+    },
     head: [
         ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/intave_logo.png"}],
         ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/intave_logo.png"}]

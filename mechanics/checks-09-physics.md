@@ -6,8 +6,9 @@
 `Since` Intave 14<br>
 
 ### How it works
-By comparing player movement with its own simulations of game code, the physics check can spot almost all movement cheats.
-Being the most complicated check in Intave, it spans over thousands of lines of code in more than a hundred class files.<br>
+By comparing player movement with its own simulations of game code, the physics check can spot almost all movement
+cheats. Being the most complicated check in Intave, it spans over thousands of lines of code in more than a hundred
+class files.
 
 The simulations need to account for cross-version bounding-boxes, elytra gliding, vehicles, velocity and fireworks, slime- & bed physics, fluids, 1.13+ swimming and water elevators, scaffolding blocks, and much more.
 
@@ -24,7 +25,8 @@ Manually blacklisting possible movement scenarios (often in checks called Fly A-
 We avoid manually figuring out if a movement is legit or not, simply by computing the legit solution ourselves.
 ### Issues
 Although the physics check is Intave's most accurate, the sheer amount of data processed can sometimes cause problems.<br>
-Given a hundred million movements, a false positive rate of just 0.01% (five immediately consecutive false positives per hour per player) would still result in ten thousand false positives.<br>
+Given a hundred million movements, a false positive rate of just 0.01%^[This average was measured over a period of
+several weeks on a subserver on GommeHD.net with 350 concurrent players at peak times.]  (five immediately consecutive false positives per hour per player) would still result in ten thousand false positives.<br>
 
 To combat the impact of this issue, the mitigation/setback system needs to operate as smoothly as possible, for the player himself and others.
 In fact, other players shouldn't be able to differentiate a player moving normally and him/her trying to fly.<br>
