@@ -10,7 +10,7 @@ Agent may have a minimal impact on startup time (0.1s-0.5s). Additionally, at le
 will be used to store the original class bytes of server classes.
 
 Please note that Agent bypasses sandboxing of plugins. If you are isolating your plugins with java security features,
-you may want to not use the Agent.
+you may want to not use Agent.
 
 ## Setup
 
