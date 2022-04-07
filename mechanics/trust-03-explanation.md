@@ -22,12 +22,12 @@ It **never** really works.<br>
 And Intave 14's accuracy actually contributes to even more uncertainty for us to address. 
 
 ### Our way
-We learned two important things: 
-1. customers should be excluded from the process of making differentiations, and
+We learned two things: 
+1. customers should be excluded from the process of making anti-cheat differentiations, and
 2. different rules are required for different players.
 
 We came up with the idea of categorizing players in groups: the bypassing, the highly trusted, the trusted, the casuals, the suspicious, and the very suspicious.<br>
 This translates quite nicely to color and to the idea of something like a trustfactor.<br>
-A general categorization of players allows for incredible flexibility, allowing the line to be very strict for some, and very relaxed with other players.<br>
+A general categorization of players allows for incredible flexibility in differentiation, allowing the line to be very strict for some, and very relaxed with others.<br>
 
-Even if it does not solve the unsolvable, it is quite effective in avoiding a full-out war with your normal players, whilst declaring it on cheaters.
+Even if it does not solve the unsolvable, it is quite effective in avoiding a full-out war with your normal players, whilst casually declaring it on cheaters.

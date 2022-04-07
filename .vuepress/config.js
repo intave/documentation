@@ -19,7 +19,7 @@ module.exports = {
             {text: "Discord", link: 'https://intave.de/go/discord'},
         ],
         sidebar: {
-            "/mechanics/": ["", sidebarMap("mechanics", "c", "Configuration"), sidebarMap("mechanics", "t", "Trustfactor")],
+            "/mechanics/": ["", sidebarMap("mechanics", "config-", "Configuration"), sidebarMap("mechanics", "checks-", "Checks"), sidebarMap("mechanics", "trust-", "Trustfactor")],
             "/guides/": ["", sidebarMap("guides", "i", "Intave"), sidebarMap("guides", "e", "Ecosystem")],
         }
     }
