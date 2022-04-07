@@ -22,7 +22,11 @@ module.exports = {
             "/mechanics/": ["", sidebarMap("mechanics", "config-", "Configuration"), sidebarMap("mechanics", "checks-", "Checks"), sidebarMap("mechanics", "trust-", "Trustfactor")],
             "/guides/": ["", sidebarMap("guides", "i", "Intave"), sidebarMap("guides", "e", "Ecosystem")],
         }
-    }
+    },
+    head: [
+        ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/intave_logo.png"}],
+        ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/intave_logo.png"}]
+    ]
 }
 
 function sidebarMap(folder, prefix, title) {
