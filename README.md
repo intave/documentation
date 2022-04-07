@@ -21,6 +21,5 @@ actionLink: /guides/i01-getting-started.html
   </div>
 </div>
 
-::: slot footer<br>
-trololo<br>
+::: slot footer
 :::
