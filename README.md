@@ -21,6 +21,6 @@ actionLink: /guides/i01-getting-started.html
   </div>
 </div>
 
-::: slot footer
-© 2021-2022 Intave · Documentation licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Imprint & Privacy Policy](https://policy.intave.de/)
-:::
+<div class="footer content__footer">
+© 2021-2022 Intave · Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://policy.intave.de/">Imprint & Privacy Policy</a>
+</div>
