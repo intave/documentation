@@ -14,13 +14,13 @@ module.exports = {
         searchPlaceholder: 'Search...',
         editLinkPattern: ':repo/-/edit/:branch/:path',
         nav: [
-            {text: "Mechanic", link: '/mechanic/'},
-            {text: "Guide", link: '/guide/'},
+            {text: "Mechanics", link: '/mechanics/'},
+            {text: "Guides", link: '/guides/'},
             {text: "Discord", link: 'https://intave.de/go/discord'},
         ],
         sidebar: {
-            "/mechanic/": [sidebarMap("mechanic", "Mechanics")],
-            "/guide/": ["", sidebarMap("guide", "i", "For Intave"), sidebarMap("guide", "e", "For plugins")],
+            "/mechanics/": ["", sidebarMap("mechanics", "c", "Configuration")],
+            "/guides/": ["", sidebarMap("guides", "i", "For Intave"), sidebarMap("guides", "e", "For plugins")],
         }
     }
 }
