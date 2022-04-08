@@ -6,10 +6,10 @@ This section contains step to step guides on how you can utilize Intave on your 
 
 Basic guides directly concerning the Intave anticheat:
 
-* [Getting Started](/guides/i01-getting-started.md)
-* [Bootstrap](/guides/i02-bootstrap.html#what-does-this-do)
-* [Proxy Support](/guides/i03-proxy.md)
-* [Agent](/guides/i04-agent.md)
+* [Getting Started](i01-getting-started.md)
+* [Bootstrap](i02-bootstrap.md)
+* [Proxy Support](i03-proxy.md)
+* [Agent](i04-agent.md)
 
 ## Ecosystem
 

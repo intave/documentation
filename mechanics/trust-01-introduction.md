@@ -1,7 +1,7 @@
 # Trustfactor
 
 Intave's trust factor system allows you to configure checks differently for different players. In contrast, the
-`mitigation mode` option configures [Physics](guides/check-09-physics.md) for all players.
+`mitigation mode` option configures [Physics](checks-09-physics.md) for all players.
 
 A trust factor is either<br>
 :white_large_square: White (`intave.bypass`): Bypass<br>

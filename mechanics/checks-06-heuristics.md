@@ -25,7 +25,7 @@ The most basic approach even in very early anti-cheats was to spawn a fake playe
 When cheaters started to exclude bot players, that often even annoyed normal players, their usefulness was questioned.
 
 The next big anticheat move was to check if attackers were actually looking at the attacked.
-While this is generally a good idea (see [AttackRaytrace](/mechanics/checks-02-attackraytrace.md)),
+While this is generally a good idea (see [AttackRaytrace](checks-02-attackraytrace.md)),
 its detection did at the time little to mitigate killaura cheats.
 
 Only when anti-cheats started to fall back to analytical approaches, cheaters needed to get creative.
@@ -33,7 +33,7 @@ Randomized aim, limited/prioritized targets and smooth rotations were now a requ
 
 The next anti-cheat move was to check whether the player's rotation actually matches their movement.
 Kill-auras at the time just told the server where they were looking at, without actually applying their fake rotations.
-Our [Physics](/mechanics/checks-09-physics.md) check detects these old kill-auras instantly.
+Our [Physics](checks-09-physics.md) check detects these old kill-auras instantly.
 Clients now need to adjust their movement to their spoofed rotations, often resulting in weird and inconvenient movement.
 
 So here we are, needing to distinguish - from thousands of legitmate players - a few cheaters, that don't attack bots,

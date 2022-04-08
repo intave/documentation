@@ -9,7 +9,7 @@ automatically downloads and updates Intave on your server.
 1. If you haven't downloaded Bootstrap yet, please do so now. Visit the [download page](https://app.intave.de/download)
    or [GitHub](https://github.com/intave/bootstrap/releases) and download the latest Bootstrap `.jar` file.
 2. Copy the `.jar` file into your server's `plugins` folder. Please keep in mind Bootstrap is a **Spigot** plugin, not a
-   BungeeCord plugin. You can add BungeeCord support to Intave by using [Proxy Support](/guide/i03-proxy.html).
+   BungeeCord plugin. You can add BungeeCord support to Intave by using [Proxy Support](i03-proxy.md).
 3. Make sure no Intave `.jar` file is in your `plugins` folder. Otherwise, Boostrap is not able to load Intave
    correctly.
 

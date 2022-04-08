@@ -18,7 +18,7 @@ If you don't own a license for Intave yet, you should purchase one:
 
 There are several ways to set up Intave:
 
-* [Intave Bootstrap](/guide/i02-bootstrap.html): This allows for automatic downloading and updating of Intave.
+* [Intave Bootstrap](i02-bootstrap.md): This allows for automatic downloading and updating of Intave.
 * Manual Installation: This involves manually downloading updates for Intave.
 
 This section covers the manual installation.
@@ -28,7 +28,7 @@ This section covers the manual installation.
 1. If you haven't downloaded Intave yet, please do so now. Visit the [download page](https://app.intave.de/download) and
    download the `Latest` branch.
 2. Copy the `.jar` file into your server's `plugins` folder. Please keep in mind Intave is a **Spigot** plugin, not a
-   BungeeCord plugin. You can add BungeeCord support to Intave by using [Proxy Support](/guide/i03-proxy.html).
+   BungeeCord plugin. You can add BungeeCord support to Intave by using [Proxy Support](i03-proxy.md).
 3. Start your server and Intave should load, notifying you with an error that your hardware is not verified.
 
 ### Hardware Verification
