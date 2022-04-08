@@ -7,15 +7,15 @@ our work.
 
 Here you will learn about configuring Intave to your needs.
 
-* [Placeholders](mechanics/config-01-placeholders.md)
+* [Placeholders](config-01-placeholders.md)
 
 ## Checks
 
 Want to know more details about our checks? Please read through the
-[checks section](mechanics/checks-01-introduction.md). There you will learn what they do, how they work and why we
+[checks section](checks-01-overview.md). There you will learn what they do, how they work and why we
 decided for certain tradeoffs.
 
 ## Trustfactor
 
 In this section we explain how Intave's trust factor system works and how it can help your server. Start reading
-[here](mechanics/trust-01-introduction.md).
+[here](trust-01-introduction.md).
