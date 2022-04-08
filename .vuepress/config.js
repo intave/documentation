@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+module.paths.push('/usr/local/lib/node_modules');
+
 module.exports = {
     title: "Intave",
     description: "Documentation around the Intave anticheat",
