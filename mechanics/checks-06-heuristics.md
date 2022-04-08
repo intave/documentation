@@ -2,7 +2,7 @@
 
 `Name` Heuristics<br>
 `Coverage` Combat automation cheats<br>
-`Developers` DarkAndBlue, vento<br>
+`Developers` DarkAndBlue, ventolotl<br>
 `Since` Intave 14<br>
 
 ### Issue

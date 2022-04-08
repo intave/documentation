@@ -2,7 +2,7 @@
 
 `Name` Physics<br>
 `Coverage` Movement related cheats<br>
-`Developers` DarkAndBlue, vento, Richy<br>
+`Developers` DarkAndBlue, ventolotl, Richy<br>
 `Since` Intave 14<br>
 
 ### Issue

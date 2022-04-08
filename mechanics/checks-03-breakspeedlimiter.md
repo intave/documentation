@@ -2,7 +2,7 @@
 
 `Name` BreakSpeedLimiter<br>
 `Coverage` Fastbreak cheats<br>
-`Developers` Richy, vento, DarkAndBlue<br>
+`Developers` Richy, ventolotl, DarkAndBlue<br>
 `Since` Intave 13<br>
 
 ### How it works
