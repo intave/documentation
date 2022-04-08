@@ -2,29 +2,42 @@
 
 `Name` Heuristics<br>
 `Coverage` Combat automation cheats<br>
-`Developers` Richy, DarkAndBlue, vento<br>
+`Developers` DarkAndBlue, vento<br>
 `Since` Intave 14<br>
 
-### How it works
+### Issue
+Combat automation cheats like KillAura automatically attack other players, often leading to advantages.
+This type of cheating is usually very obvious to other players and very hard to detect with code.
 
-Killaura cheats allow cheaters to automatically hit players around them.
-
-Intave analyzes player combat over longer periods of time (30-60 seconds). The check then decides how likely a player is
-cheating. Please understand that the internal details of this check will remain a permanent secret. This is to make it
-very hard to bypass and have it remain effective in the long run.
-
-Each detection will generate a unique identifier, helpful if you want to report false positives.
+### Detection
+Understand that detection-details will remain secret, mostly for the check to remain effective in the long run.
+Each (30s-60s) scheduled analysis will generate a unique identifier, helpful if you want to report false positives.
 
 ### Accuracy
+Heuristics is a sophisticated and well-tested detection system for combat related cheats.
+It notices, mitigates and removes even privately created combat automations targeted towards Intave, including treats it has never seen before. 
+False positives are rare and unlikely.
 
-Heuristics is a sophisticated and well-tested detection system. It notices, mitigates and removes even privately created
-combat cheats targeted towards Intave. False positives are very unlikely.
+### History
+Detecting kill-aura has always been a difficulty.
 
-### Alternatives
+The most basic approach even in very early anti-cheats was to spawn a fake player, checking if the kill-aura would attack it.
+When cheaters started to exclude bot players, that often even annoyed normal players, their usefulness was questioned.
 
-To our current knowledge, no better alternative approach mitigating fight-automation cheats exists.
+The next big anticheat move was to check if attackers were actually looking at the attacked.
+While this is generally a good idea (see [AttackRaytrace](/mechanics/checks-02-attackraytrace.md)),
+its detection did at the time little to mitigate killaura cheats.
 
+Only when anti-cheats started to fall back to analytical approaches, cheaters needed to get creative.
+Randomized aim, limited/prioritized targets and smooth rotations were now a requirement.
+
+The next anti-cheat move was to check whether the player's rotation actually matches their movement.
+Kill-auras at the time just told the server where they were looking at, without actually applying their fake rotations.
+Our [Physics](/mechanics/checks-09-physics.md) check detects these old kill-auras instantly.
+Clients now need to adjust their movement to their spoofed rotations, often resulting in weird and inconvenient movement.
+
+So here we are, needing to distinguish - from thousands of legitmate players - a few cheaters, that don't attack bots,
+emulate a correct attack-raytrace, legitimize their rotations and follow minecraft protocol as good as it gets.
 ### Issues
-
 Unfortunately, a full distinction from legitimate behavior is not always possible; not even with a complete game
-protocol overhaul. Therefore, albeit hard, it is and always will be theoretically possible to bypass this check.
+protocol overhaul. Therefore, albeit difficult, it is and always will be theoretically possible to bypass this check.

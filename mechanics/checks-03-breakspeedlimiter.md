@@ -16,13 +16,13 @@ canceling the block break.
 
 ### Accuracy
 
-This check is able to detect small deviations and gets more accurate the more data Intave collects.
+This check is able to detect small deviations and gets more accurate over time the more data it collects.
 
 ### Alternatives
 
-To our current knowledge, no better alternative approach mitigating fastbreak cheats exists.
+To our current knowledge, no better alternative approach mitigating fast-break cheats exists.
+Other solutions rarely even try to detect it.
 
 ### Issues
 
-The check might false flag legitimate players with rapid latency changes. Intave does try to account for such scenarios,
-however.
+The check might false flag legitimate players with rapid latency changes, even with Intave trying to account for such scenarios.
