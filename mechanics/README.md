@@ -7,7 +7,7 @@ our work.
 
 Here you will learn about configuring Intave to your needs.
 
-* [Placeholders](configuration-03-placeholders.md)
+* [Placeholders](configuration-04-placeholders.md)
 
 ## Checks
 
@@ -32,4 +32,4 @@ Intave generates two configuration files:
 * [`config.yml`](configuration-01-config.md)
 * [`settings.yml`](configuration-02-settings.md)
 
-Additionally, Intave has several [settings placeholders](configuration-03-placeholders.md).
+Additionally, Intave has several [settings placeholders](configuration-04-placeholders.md).

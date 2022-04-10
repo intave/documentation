@@ -130,37 +130,101 @@ server and Intave.<br>
 ## clientwarning
 ### enable
 
-`Description:` TODO<br>
+`Description:` Warning system for bugged legit clients.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
 ## filter
 ### health
 
+`Description:` If enabled, Intave will not send health data of other entities to the client. This
+doesn't affect legitimate players but may impact (cheat) clients with damage indicators.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
 ### equipmentdata
+
+`Description:` If enabled, Intave will not send equipment data of other entities to the client. This
+doesn't affect legitimate players but may impacts cheat clients.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 ### chat-insults
 
+`Description:` Currently unused.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
 ### chat-spam
+
+`Description:` Currently unused.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 ## command
 ### hide
 
+`Description:` If activated, hides Intave's commands from normal players. Messages with the regular
+Intave command are replaced with a command that does not exist. This way, your custom error messages
+will apply.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
 ## rejoin
+
+Configuration for Intave's behavior when a player that has recently been kicked rejoins.
+
 ### delay
+
+`Description:` How many ticks (1 tick = 50ms) a recently kicked player must wait until they can
+rejoin.<br>
+`Type:` Integer<br>
+`Default:` 3600<br>
 
 ### refresh
 
+`Description:` Whether Intave should reset the delay timer if a player tries to rejoin before the
+delay has expired.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
 ### message
+
+`Description:` What kick message Intave should use in this scenario.<br>
+`Type:` String<br>
+`Default:` "&cYou were recently removed, please wait before connecting again"<br>
 
 ## logging
 ### console-log
 
+`Description:` Whether Intave should log verbose messages to the console.<br>
+`Type:` Boolean<br>
+`Default:` false<br>
+
 ### file-log
+
+`Description:` Whether Intave should log verbose messages to the file system.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 ## layout
 ### verbose
 
+`Description:` The verbose message format. Please note you can use
+[placeholders](configuration-04-placeholders.md)<br>
+`Type:` String<br>
+`Default:` "{prefix} &c{player}&7/{trust-color}&7 {message} {details} (+{vladded} -> {vl})"<br>
+
 ### notify
 
+`Description:` The notify message format. Please note you can use
+[placeholders](configuration-04-placeholders.md)<br>
+`Type:` String<br>
+`Default:` "{prefix} &c&lNotify&8: &7{text}"<br>
+
 ### prefix
+
+`Description:` Value of the `{prefix}` placeholder.
+[placeholders](configuration-04-placeholders.md)<br>
+`Type:` String<br>
+`Default:` "&8[&c&lIntave&8]&7 "<br>
