@@ -16,9 +16,12 @@ In the `settings.yml` file you can change Intave's behavior.
 
 ## check
 ### physics
+
+Settings for the [Physics](checks-09-physics.md) check.
+
 #### high-tolerance
 
-`Description:` Enables Intave's high tolerance mode. Use this if many players on your server
+`Description:` Enables high tolerance mode for the check. Use this if many players on your server
 have a bad internet connection.<br>
 `Type:` Boolean<br>
 `Default:` false<br>
@@ -45,21 +48,52 @@ anomalies.<br>
 #### thresholds
 
 ### timer
+
+Settings for the [Timer](checks-12-timer.md) check.
+
 #### high-tolerance
+
+`Description:` Enables high tolerance mode for the check. Use this if many players on your server
+have a bad internet connection.<br>
+`Type:` Boolean<br>
+`Default:` false<br>
 
 #### thresholds
 
 ### heuristics
+
+Settings for the [Heuristics](checks-06-heuristics.md) check.
+
 #### enabled
+
+`Description:` Enables the [Heuristics](checks-06-heuristics.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 #### combat-sampling
 
+`Description:` Grants Intave the permission to record combat data and upload it to our servers.<br>
+`Type:` Boolean<br>
+`Default:` false<br>
+
 #### disable-reducing
+
+`Description:` Fixes an 1.8 bug that causes players to receive less knockback when spam clicking
+entities. While this greatly reduces the effect of autoclickers, it heavily changes 1.8 PVP.<br>
+`Type:` Boolean<br>
+`Default:` false<br>
 
 #### confidence-thresholds
 
 ### attackraytrace
+
+Settings for the [AttackRaytrace](checks-02-attackraytrace.md) check.
+
 #### enabled
+
+`Description:` Enables the [AttackRaytrace](checks-02-attackraytrace.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 #### applicable-thresholds
 ##### reach
@@ -67,47 +101,119 @@ anomalies.<br>
 ##### hitbox
 
 ### interactionraytrace
+
+Settings for the [InteractionRaytrace](checks-07-interactionraytrace.md) check.
+
 #### enabled
+
+`Description:` Enables the [InteractionRaytrace](checks-07-interactionraytrace.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 #### thresholds
 
 ### clickpatterns
+
+Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.
+
 #### enabled
+
+`Description:` Enables the [ClickPatterns](checks-04-clickpatterns.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 #### thresholds
 
 ### clickspeedlimiter
+
+Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.
+
 #### enabled
 
+`Description:` Enables the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
 #### max-cps
+
+`Description:` Sets the maximum amount of clicks per second a player may use.<br>
+`Type:` Integer<br>
+`Default:` 20<br>
 
 #### thresholds
 
 ### breakspeedlimiter
+
+Settings for the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.
+
 #### enabled
+
+`Description:` Enables the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 #### thresholds
 
 ### protocolscanner
+
+Settings for the [ProtocolScanner](checks-11-protocolscanner.md) check.
+
 #### enabled
+
+`Description:` Enables the [ProtocolScanner](checks-11-protocolscanner.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
 
 #### invokant
 
+`Description:` *Currently unused.*<br>
+`Type:` Boolean<br>
+`Default:` false<br>
+
 #### check_sent_slot_twice_vl
+
+`Description:` Allows you to modify the violation level of when the client sends a slot twice.
+If you experience false positives, lower this number or set it to 0.<br>
+`Type:` Intave<br>
+`Default:` 100<br>
 
 #### thresholds
 
 ### placementanalysis
+
+Settings for the [PlacementAnalysis](checks-10-placementanalysis.md) check.
+
 #### enabled
 
+`Description:` Enables the [PlacementAnalysis](checks-10-placementanalysis.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
 #### check_timings
+
+`Description:` Enables time based scaffold checks. Please test this setting before enabling it on
+production as some servers may experience false positives with it.<br>
+`Type:` Boolean<br>
+`Default:` false<br>
 
 #### thresholds
 
 ### inventoryclickanalysis
+
+Settings for the [InventoryClickAnalysis](checks-08-inventoryclickanalysis.md) check.
+
 #### enabled
 
+`Description:` Enables the [InventoryClickAnalysis](checks-08-inventoryclickanalysis.md) check.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
 #### high-tolerance
+
+`Description:` Enables high tolerance mode for the check. Use this if many players on your server
+have a bad internet connection.<br>
+`Type:` Boolean<br>
+`Default:` false<br>
 
 #### thresholds
 
@@ -151,13 +257,13 @@ doesn't affect legitimate players but may impacts cheat clients.<br>
 
 ### chat-insults
 
-`Description:` Currently unused.<br>
+`Description:` _Currently unused._<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
 ### chat-spam
 
-`Description:` Currently unused.<br>
+`Description:` _Currently unused._<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
