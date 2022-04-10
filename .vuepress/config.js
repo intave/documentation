@@ -22,7 +22,7 @@ module.exports = {
         sidebar: {
             "/mechanics/": [
                 "",
-                sidebarMap("mechanics", "config-", "Configuration"),
+                sidebarMap("mechanics", "configuration-", "Configuration"),
                 sidebarMap("mechanics", "checks-", "Checks"),
                 sidebarMap("mechanics", "trust-", "Trustfactor"),
                 sidebarMap("mechanics", "permissions-", "Permissions")

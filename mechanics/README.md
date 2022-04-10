@@ -7,7 +7,7 @@ our work.
 
 Here you will learn about configuring Intave to your needs.
 
-* [Placeholders](config-01-placeholders.md)
+* [Placeholders](configuration-03-placeholders.md)
 
 ## Checks
 
@@ -20,7 +20,16 @@ decided for certain tradeoffs.
 In this section we explain how Intave's trust factor system works and how it can help your server. Start reading
 [here](trust-01-introduction.md).
 
-# Permissions
+## Permissions
 
 Please read the [permissions overview](permissions-01-overview.md) to learn what permissions Intave
 uses.
+
+## Configuration
+
+Intave generates two configuration files:
+
+* [`config.yml`](configuration-01-config.md)
+* [`settings.yml`](configuration-02-settings.md)
+
+Additionally, Intave has several [settings placeholders](configuration-03-placeholders.md).
