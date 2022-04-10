@@ -17,7 +17,7 @@ In the `settings.yml` file you can change Intave's behavior.
 ## check
 ### physics
 
-Settings for the [Physics](checks-09-physics.md) check.
+*Settings for the [Physics](checks-09-physics.md) check.*
 
 #### high-tolerance
 
@@ -49,7 +49,7 @@ anomalies.<br>
 
 ### timer
 
-Settings for the [Timer](checks-12-timer.md) check.
+*Settings for the [Timer](checks-12-timer.md) check.*
 
 #### high-tolerance
 
@@ -62,7 +62,7 @@ have a bad internet connection.<br>
 
 ### heuristics
 
-Settings for the [Heuristics](checks-06-heuristics.md) check.
+*Settings for the [Heuristics](checks-06-heuristics.md) check.*
 
 #### enabled
 
@@ -87,7 +87,7 @@ entities. While this greatly reduces the effect of autoclickers, it heavily chan
 
 ### attackraytrace
 
-Settings for the [AttackRaytrace](checks-02-attackraytrace.md) check.
+*Settings for the [AttackRaytrace](checks-02-attackraytrace.md) check.*
 
 #### enabled
 
@@ -102,7 +102,7 @@ Settings for the [AttackRaytrace](checks-02-attackraytrace.md) check.
 
 ### interactionraytrace
 
-Settings for the [InteractionRaytrace](checks-07-interactionraytrace.md) check.
+*Settings for the [InteractionRaytrace](checks-07-interactionraytrace.md) check.*
 
 #### enabled
 
@@ -114,7 +114,7 @@ Settings for the [InteractionRaytrace](checks-07-interactionraytrace.md) check.
 
 ### clickpatterns
 
-Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.
+*Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.*
 
 #### enabled
 
@@ -126,7 +126,7 @@ Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.
 
 ### clickspeedlimiter
 
-Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.
+*Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.*
 
 #### enabled
 
@@ -144,7 +144,7 @@ Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.
 
 ### breakspeedlimiter
 
-Settings for the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.
+*Settings for the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.*
 
 #### enabled
 
@@ -156,7 +156,7 @@ Settings for the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.
 
 ### protocolscanner
 
-Settings for the [ProtocolScanner](checks-11-protocolscanner.md) check.
+*Settings for the [ProtocolScanner](checks-11-protocolscanner.md) check.*
 
 #### enabled
 
@@ -181,7 +181,7 @@ If you experience false positives, lower this number or set it to 0.<br>
 
 ### placementanalysis
 
-Settings for the [PlacementAnalysis](checks-10-placementanalysis.md) check.
+*Settings for the [PlacementAnalysis](checks-10-placementanalysis.md) check.*
 
 #### enabled
 
@@ -200,7 +200,7 @@ production as some servers may experience false positives with it.<br>
 
 ### inventoryclickanalysis
 
-Settings for the [InventoryClickAnalysis](checks-08-inventoryclickanalysis.md) check.
+*Settings for the [InventoryClickAnalysis](checks-08-inventoryclickanalysis.md) check.*
 
 #### enabled
 
