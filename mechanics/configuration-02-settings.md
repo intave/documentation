@@ -107,7 +107,7 @@ players. While this greatly reduces the effect of autoclickers, it heavily chang
 #### confidence-thresholds
 
 `Description:` Actions Intave should execute when detecting a player.<br>
-`Type:` [Thresholds](configuration-03-thresholds.md#confidence-threshold)<br>
+`Type:` [Confidence thresholds](configuration-03-thresholds.md#confidence-threshold)<br>
 `Default:`<br>
 ```
 "!!":
