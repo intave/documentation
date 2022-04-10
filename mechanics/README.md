@@ -19,3 +19,8 @@ decided for certain tradeoffs.
 
 In this section we explain how Intave's trust factor system works and how it can help your server. Start reading
 [here](trust-01-introduction.md).
+
+# Permissions
+
+Please read the [permissions overview](permissions-01-overview.md) to learn what permissions Intave
+uses.
