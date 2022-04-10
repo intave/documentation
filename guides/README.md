@@ -10,6 +10,7 @@ Basic guides directly concerning the Intave anticheat:
 * [Bootstrap](i02-bootstrap.md)
 * [Proxy Support](i03-proxy.md)
 * [Agent](i04-agent.md)
+* [Storage](i05-storage.md)
 
 ## Ecosystem
 
