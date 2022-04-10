@@ -1,4 +1,4 @@
-# Settings Placeholders
+# Placeholders
 ## Intave
 
 * `{prefix}` &8[&c&lIntave&8]&7 by default

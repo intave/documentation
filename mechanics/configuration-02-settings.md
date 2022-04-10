@@ -47,6 +47,18 @@ anomalies.<br>
 
 #### thresholds
 
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+100: "intave internals sendnotify &c{player}&7/{trust-color}&7 is moving incorrectly"
+400:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 is moving incorrectly #2"
+999:
+  - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+  - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+```
+
 ### timer
 
 *Settings for the [Timer](checks-12-timer.md) check.*
@@ -59,6 +71,15 @@ have a bad internet connection.<br>
 `Default:` false<br>
 
 #### thresholds
+
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is moving too frequently / is lagging"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 is moving too frequently / is lagging for a long period"
+```
 
 ### heuristics
 
@@ -79,11 +100,33 @@ have a bad internet connection.<br>
 #### disable-reducing
 
 `Description:` Fixes an 1.8 bug that causes players to receive less knockback when spam clicking
-entities. While this greatly reduces the effect of autoclickers, it heavily changes 1.8 PVP.<br>
+players. While this greatly reduces the effect of autoclickers, it heavily changes 1.8 PVP.<br>
 `Type:` Boolean<br>
 `Default:` false<br>
 
 #### confidence-thresholds
+
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md#confidence-threshold)<br>
+`Default:`<br>
+```
+"!!":
+  25:
+    - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for attacking suspiciously (!!) (heuristics)"
+    - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+    - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+
+"!":
+  25: "intave internals sendnotify &c{player}&7/{trust-color}&7 is attacking suspiciously (!) (heuristics)"
+  50:
+    - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for attacking suspiciously (!) (heuristics)"
+    - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+    - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+
+"?!":
+  50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is attacking suspiciously (?!) (heuristics)"
+  75: "intave internals sendnotify &c{player}&7/{trust-color}&7 is attacking suspiciously #2 (?!) (heuristics)"
+```
 
 ### attackraytrace
 
@@ -98,7 +141,26 @@ entities. While this greatly reduces the effect of autoclickers, it heavily chan
 #### applicable-thresholds
 ##### reach
 
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is attacking suspiciously (reach)"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for attacking suspiciously (reach)"
+  - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+  - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+```
+
 ##### hitbox
+
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is attacking suspiciously (hitbox)"
+100: "intave internals sendnotify &c{player}&7/{trust-color}&7 is attacking suspiciously #2 (hitbox)"
+```
 
 ### interactionraytrace
 
@@ -112,6 +174,15 @@ entities. While this greatly reduces the effect of autoclickers, it heavily chan
 
 #### thresholds
 
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is interacting suspiciously"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 is interacting suspiciously #2"
+```
+
 ### clickpatterns
 
 *Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.*
@@ -123,6 +194,17 @@ entities. While this greatly reduces the effect of autoclickers, it heavily chan
 `Default:` true<br>
 
 #### thresholds
+
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is clicking statistically anomalously (auto-clicker)"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for clicking statistically anomalously (auto-clicker)"
+  - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+  - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+```
 
 ### clickspeedlimiter
 
@@ -142,6 +224,17 @@ entities. While this greatly reduces the effect of autoclickers, it heavily chan
 
 #### thresholds
 
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is attacking too quickly"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for attacking too quickly"
+  - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+  - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+```
+
 ### breakspeedlimiter
 
 *Settings for the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.*
@@ -153,6 +246,13 @@ entities. While this greatly reduces the effect of autoclickers, it heavily chan
 `Default:` true<br>
 
 #### thresholds
+
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+100: "intave internals sendnotify &c{player}&7/{trust-color}&7 is breaking blocks too quickly"
+```
 
 ### protocolscanner
 
@@ -179,6 +279,17 @@ If you experience false positives, lower this number or set it to 0.<br>
 
 #### thresholds
 
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is sending invalid packets"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for sending invalid packets"
+  - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+  - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+```
+
 ### placementanalysis
 
 *Settings for the [PlacementAnalysis](checks-10-placementanalysis.md) check.*
@@ -198,6 +309,17 @@ production as some servers may experience false positives with it.<br>
 
 #### thresholds
 
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is placing blocks incorrectly"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for placing blocks incorrectly"
+  - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+  - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+```
+
 ### inventoryclickanalysis
 
 *Settings for the [InventoryClickAnalysis](checks-08-inventoryclickanalysis.md) check.*
@@ -216,6 +338,17 @@ have a bad internet connection.<br>
 `Default:` false<br>
 
 #### thresholds
+
+`Description:` Actions Intave should execute when detecting a player.<br>
+`Type:` [Thresholds](configuration-03-thresholds.md)<br>
+`Default:`<br>
+```
+50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is performing invalid item-operations"
+100:
+  - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for clicking suspiciously on items"
+  - "intave internals collectivekick {player} &cYou have been kicked, as an account with your ip address was removed from the game"
+  - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
+```
 
 ## blacklist
 ### apply
@@ -317,20 +450,19 @@ delay has expired.<br>
 ### verbose
 
 `Description:` The verbose message format. Please note you can use
-[placeholders](configuration-04-placeholders.md)<br>
+[placeholders](configuration-04-placeholders.md).<br>
 `Type:` String<br>
 `Default:` "{prefix} &c{player}&7/{trust-color}&7 {message} {details} (+{vladded} -> {vl})"<br>
 
 ### notify
 
 `Description:` The notify message format. Please note you can use
-[placeholders](configuration-04-placeholders.md)<br>
+[placeholders](configuration-04-placeholders.md).<br>
 `Type:` String<br>
 `Default:` "{prefix} &c&lNotify&8: &7{text}"<br>
 
 ### prefix
 
-`Description:` Value of the `{prefix}` placeholder.
-[placeholders](configuration-04-placeholders.md)<br>
+`Description:` Value of the `{prefix}` placeholder.<br>
 `Type:` String<br>
 `Default:` "&8[&c&lIntave&8]&7 "<br>
