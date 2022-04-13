@@ -7,7 +7,7 @@
 
 ### Issue
 Combat automation cheats like KillAura automatically attack other players, often leading to advantages.
-This type of cheating is usually very obvious to other players and very hard to detect with code.
+This type of cheating is usually very obvious to other players, but very hard to detect with code.
 
 ### Detection
 Understand that detection-details will remain secret, mostly for the check to remain effective in the long run.
@@ -38,6 +38,7 @@ Clients now need to adjust their movement to their spoofed rotations, often resu
 
 So here we are, needing to distinguish - from thousands of legitmate players - a few cheaters, that don't attack bots,
 emulate a correct attack-raytrace, legitimize their rotations and follow minecraft protocol as good as it gets.
+
 ### Issues
 Unfortunately, a full distinction from legitimate behavior is not always possible; not even with a complete game
 protocol overhaul. Therefore, albeit difficult, it is and always will be theoretically possible to bypass this check.
