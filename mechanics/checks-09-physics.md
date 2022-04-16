@@ -2,7 +2,7 @@
 
 `Name` Physics<br>
 `Coverage` Movement related cheats<br>
-`Developers` DarkAndBlue, ventolotl, Richy<br>
+`Developers` DarkAndBlue, ventolotl, Jpx3<br>
 `Since` Intave 14<br>
 
 ### Issue
@@ -14,20 +14,20 @@ making it difficult to detect cheats without impacting normal players.
 By comparing player movement with its own simulations of game code, the physics check can spot almost all movement
 cheats. Spanning over thousands of lines of code in more than a hundred class files, it is the most complicated check in Intave.
 
-The simulations need to account for cross-version bounding-boxes, elytra gliding, vehicles, velocity and fireworks, slime- & bed physics, fluids, 1.13+ swimming and water elevators, scaffolding blocks, and much more.
+The simulations need to account for cross-version support, elytra gliding, vehicles, velocity and fireworks, slime- & bed physics, fluids, 1.13+ swimming and advanced water physics, scaffolding blocks, player latency, block-changes and placements, item attributes, effects like speed and jumpboost and much, much more.
 
-A neat setback system will correct any cheats detected, mitigating any possible advantage.
+A setback system will correct any cheats detected, mitigating any gained advantage.
 ### Accuracy
-The check is able to detect any deviation in movement, meaning we can detect any movement-related cheats like Speed, Fly and Anti-Knockback.
-
+The check is able to detect any deviation in movement, meaning we can detect any movement-related cheats like *Speed*, *Fly* and *Anti-Knockback*.
 ### History
-Some anti-cheats use constraint-based checks, for example: `Player is moving upwards and is in air for longer than X ticks -> cheating detected`;
-other anti-cheats (including older version of Intave) hardcode a basic conversion formula for motion on the Y-Axis and use limiting checks for motion on the XZ-Axes, 
-for example: `Player is jumping (defined by vertical motion), so he can't move faster than 0.6 blocks horizontally`.<br>
-
-Both variations have major flaws, including extreme bypasses. <br>
-Manually blacklisting possible movement scenarios (often in checks called Fly A-Z, Speed A-Z, etc.) seems now tediously pointless to us.<br>
-We can avoid manually figuring out if a movement is legit or not, simply by computing the legit solution ourselves.
+Very simple and early anticheats including the server's default anti-fly mechanism use constraint-based checks, checking for very simple conditions occurring simultaneously. 
+For example: `Player is moving upwards, but is in air for longer than x ticks or y seconds -> fly cheating detected`
+<br>
+More *advanced* anticheats including older version of Intave hardcode a basic conversion formula for motion on the Y-Axis and use limiting checks for motion on the XZ-Axes, 
+for example: `Player is jumping (defined by vertical motion), so he can't move faster than 0.6 blocks horizontally`<br>
+Both first and second generation (constraint & analysis based) whilst being seriously flawed are - even to this day - still used by the majority of anticheats. <br>
+With movement checks of the 3rd generation, falsely labelled *predictions* by many, 
+we mostly avoid manually figuring out if a movement is legit or not, simply by simulating the solution ourselves.
 
 ### Issues
 Although the physics check is Intave's most accurate, the sheer amount of data processed can sometimes cause problems.<br>

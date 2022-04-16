@@ -2,7 +2,7 @@
 
 `Name` AttackRaytrace<br>
 `Coverage` Reach and hitbox cheats<br>
-`Developers` Richy, DarkAndBlue<br>
+`Developers` Jpx3, DarkAndBlue<br>
 `Since` Intave 14<br>
 
 ### Issue
@@ -11,16 +11,16 @@ The vanilla client-side limit for entity interactions in survival mode is 3.0 bl
 
 ### Detection
 Before we can check from how far an entity is attacked, we need to know its position for the observer.
-While this sounds quite easy indeed, it couldn't be more complicated.
+While this might sound easy, getting it to work with nasty protocol tricks was very difficult.
 With the correct observer entity position, we can re-perform the client's raytrace to verify the attack.
-Commonly used mods like Optifine make matters with their "bugfixes" only worse.
+Commonly used mods like Optifine make matters with their "bugfixes" and "optimizations" only worse.
 
 ### Accuracy
 Any reach down to the 15th decimal is theoretically detectable.
-Due to certain inconsistencies, we achieve a peak accuracy of 3.001 blocks.
+Due to certain inconsistencies, we achieve a peak accuracy detecting 0.001 blocks of additional reach.
 
 ### History
-[write more]
+[redacted until further notice]
 
 ### Issues
-[redacted until common knowledge]
+[redacted until further notice]

@@ -2,7 +2,7 @@
 
 `Name` Timer<br>
 `Coverage` Game speed modifications<br>
-`Developers` Richy<br>
+`Developers` Jpx3<br>
 `Since` Intave 13<br>
 
 ## Issue

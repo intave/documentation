@@ -2,7 +2,7 @@
 
 `Name` ProtocolScanner<br>
 `Coverage` Game protocol changes<br>
-`Developers` Richy<br>
+`Developers` Jpx3<br>
 `Since` Intave 12<br>
 
 ## Issue

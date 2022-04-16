@@ -10,7 +10,7 @@ Combat automation cheats like KillAura automatically attack other players, often
 This type of cheating is usually very obvious to other players, but very hard to detect with code.
 
 ### Detection
-Understand that detection-details will remain secret, mostly for the check to remain effective in the long run.
+Understand that details on this check will remain secret, mostly for the check to remain effective in the long run.
 Each (30s-60s) scheduled analysis will generate a unique identifier, helpful if you want to report false positives.
 
 ### Accuracy

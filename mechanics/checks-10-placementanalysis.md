@@ -2,7 +2,7 @@
 
 `Name` PlacementAnalysis<br>
 `Coverage` Scaffold cheats<br>
-`Developers` Richy<br>
+`Developers` Jpx3<br>
 `Since` Intave 12<br>
 
 ### Issue

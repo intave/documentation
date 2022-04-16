@@ -2,7 +2,7 @@
 
 `Name` InteractionRaytrace<br>
 `Coverage` Reach, hitbox, block placement cheats<br>
-`Developers` Richy<br>
+`Developers` Jpx3<br>
 `Since` Intave 14<br>
 
 ### Issue
