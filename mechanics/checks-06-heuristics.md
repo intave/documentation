@@ -31,9 +31,9 @@ its detection did at the time little to mitigate killaura cheats.
 Only when anti-cheats started to fall back to analytical approaches, cheaters needed to get creative.
 Randomized aim, limited/prioritized targets and smooth rotations were now a requirement.
 
-The next anti-cheat move was to check whether the player's rotation actually matches their movement.
+The last big anti-cheat move was to check whether the player's rotation actually matches their movement.
 Kill-auras at the time just told the server where they were looking at, without actually applying their fake rotations.
-Our [Physics](checks-09-physics.md) check detects these old kill-auras instantly.
+Our [Physics](checks-09-physics.md) check covers these old kill-auras.
 Clients now need to adjust their movement to their spoofed rotations, often resulting in weird and inconvenient movement.
 
 So here we are, needing to distinguish - from thousands of legitmate players - a few cheaters, that don't attack bots,

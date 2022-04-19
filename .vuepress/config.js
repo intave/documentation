@@ -27,7 +27,12 @@ module.exports = {
                 sidebarMap("mechanics", "trust-", "Trustfactor"),
                 sidebarMap("mechanics", "permissions-", "Permissions")
             ],
-            "/guides/": ["", sidebarMap("guides", "i", "Intave"), sidebarMap("guides", "e", "Ecosystem")],
+            "/guides/": [
+                "",
+                sidebarMap("guides", "i", "Intave"),
+                sidebarMap("guides", "guides-", ""),
+                sidebarMap("guides", "e", "Ecosystem")
+            ],
         }
     },
     markdown: {

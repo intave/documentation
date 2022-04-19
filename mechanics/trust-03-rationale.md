@@ -28,8 +28,8 @@ being mitigated wrongfully.*
 
 ## The Standard/Old Way
 
-While most anticheats just ignore this blurry territory, some systems including older versions of Intave solved it. We
-outsourced key decisions of distinction via an easy-to-change configuration file to their respective, often
+While most anticheats just ignore this blurry territory, some systems including older versions of Intave 'solved' it by
+outsourcing key decisions of distinction via an easy-to-change configuration file to their respective, often
 inexperienced customers.
 
 This led to a massive amount of bypasses and false-positives, with a lot of customers spending **years** and a lot of
