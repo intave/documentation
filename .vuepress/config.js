@@ -29,9 +29,9 @@ module.exports = {
             ],
             "/guides/": [
                 "",
-                sidebarMap("guides", "i", "Intave"),
-                sidebarMap("guides", "guides-", ""),
-                sidebarMap("guides", "e", "Ecosystem")
+                sidebarMap("guides", "intave-", "For Intave"),
+                sidebarMap("guides", "asset-", "For Assets"),
+                sidebarMap("guides", "external-", "Other")
             ],
         }
     },

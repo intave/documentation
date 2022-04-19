@@ -362,7 +362,7 @@ server and Intave.<br>
 ### enable
 
 `Description:` Enables Intave's proxy support. Only enable this option if you are using the
-[Proxy Support](/guides/i03-proxy.md) plugin.<br>
+[Proxy Support](/guides/asset-03-proxy.md) plugin.<br>
 `Type:` Boolean<br>
 `Default:` false<br>
 

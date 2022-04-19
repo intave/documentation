@@ -9,15 +9,6 @@
 Combat automation cheats like KillAura automatically attack other players, often leading to advantages.
 This type of cheating is usually very obvious to other players, but very hard to detect with code.
 
-### Detection
-Understand that details on this check will remain secret, mostly for the check to remain effective in the long run.
-Each (30s-60s) scheduled analysis will generate a unique identifier, helpful if you want to report false positives.
-
-### Accuracy
-Heuristics is a sophisticated and well-tested detection system for combat related cheats.
-It notices, mitigates and removes even privately created combat automations targeted towards Intave, including treats it has never seen before. 
-False positives are rare and unlikely.
-
 ### History
 Detecting kill-aura has always been a difficulty.
 
@@ -38,6 +29,16 @@ Clients now need to adjust their movement to their spoofed rotations, often resu
 
 So here we are, needing to distinguish - from thousands of legitmate players - a few cheaters, that don't attack bots,
 emulate a correct attack-raytrace, legitimize their rotations and follow minecraft protocol as good as it gets.
+
+
+### Detection
+Understand that details on this check will remain secret, mostly for the check to remain effective in the long run.
+Each (30s-60s) scheduled analysis will generate a unique identifier, helpful if you want to report false positives.
+
+### Accuracy
+Heuristics is a sophisticated and well-tested detection system for combat related cheats.
+It notices, mitigates and removes even privately created combat automations targeted towards Intave, including treats it has never seen before. 
+False positives are rare and unlikely.
 
 ### Issues
 Unfortunately, a full distinction from legitimate behavior is not always possible; not even with a complete game
