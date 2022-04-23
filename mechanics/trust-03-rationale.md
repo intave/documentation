@@ -17,14 +17,18 @@ to tell which is which.
 As anticheat developer, you start drawing a fixed line of differentiation between the two categories, praying to the
 gods that it is somewhat balanced.
 
-*Example: Any lag over 3 seconds is illegitimate and needs to be mitigated/set-backed.*<br>
+::: tip EXAMPLE
+Any lag over 3 seconds is illegitimate and needs to be mitigated/set-backed.
+:::
 
 Experience shows in cases where our line is blurry, this never really works, no matter where you put it. Either players
 will complain about false positives or complain about bypasses.
 
-*Example: With three seconds as limit, cheaters can now buffer packets and "teleport"
+::: tip EXAMPLE
+With three seconds as limit, cheaters can now buffer packets and blink-teleport
 (`3s * 20 ticks/second * ~0.4 blocks/ticks = 20 blocks`) **and** players with a weak connection will complain about
-being mitigated wrongfully.*
+being mitigated wrongfully.
+:::
 
 ## The Standard/Old Way
 

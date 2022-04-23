@@ -17,5 +17,4 @@ As this check is relatively new, it has not yet been tested extensively. We do n
 detections.
 
 ### Issues
-ClickPatterns is highly experimental currently and may produce false detections. Additionally, unnatural clicking
-techniques like "butterfly clicking" or "drag clicking"/"mouse abuse" may get detected.
+ClickPatterns is currently unstable, just use it for testing purposes.

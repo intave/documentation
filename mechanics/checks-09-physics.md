@@ -17,9 +17,7 @@ making it challenging to spot deviations.
 Very simple and early anticheats including the server's default anti-fly mechanism use constraint-based checks, checking for very simple conditions occurring simultaneously.
 <br>
 ::: details Example for a constraint-based, 1st generation check
-`
 Player is moving upwards, but is in air for longer than 20 ticks -> flying
-`
 ```kotlin
 fun checkMovement(
   player: Player,
@@ -47,9 +45,7 @@ writing a constraint-based check for every possible edge case doesn't help much.
 Slightly more advanced anticheats including older version of Intave hardcode a basic conversion formula for motion on the Y-Axis and use limiting checks for motion on the XZ-Axes.
 
 ::: details Example for a limiting, 2nd generation check
-`
 Player is jumping (defined by vertical motion), so he can't move faster than 0.6 blocks horizontally
-`
 ```kotlin
 fun checkMovement(
   player: Player,
@@ -58,7 +54,7 @@ fun checkMovement(
   val isJumping = motion.getY() === 0.42 + 0.1 * player.jumpEffectAmplifier
   val maxHorizontalSpeed: Double = 0.6 + 0.1 * player.speedEffectAmplifier
   if (isJumping && motion.horizontalLength > maxHorizontalSpeed) {
-    player.kick("You can't move faster than $maxHorizontalSpeed blocks horizontally")
+    // incorrect movement
   }
 }
 // ...
@@ -81,9 +77,9 @@ With the third generation movement checks, often incorrectly labelled *predictio
 manually figuring out if a movement is legit or not is mostly avoided, simply by self-simulating the correct solution.
 
 ::: details Example for a simulating, 3rd generation check
-`
+
 We already know the correct motion, so we can simply check if the player's motion is correct
-`
+
 ```kotlin
 fun checkMovement(
   player: Player,
@@ -92,7 +88,7 @@ fun checkMovement(
 ) {
   val correctMotion: Motion = simulateCorrectMotionFrom(lastMotion)
   if (motion.distance(simulatedMotion) > 0.01) {
-    player.kick("Invalid movement")
+    // incorrect movement
   }
 }
 

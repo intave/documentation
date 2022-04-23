@@ -6,18 +6,15 @@
 `Since` Intave 12<br>
 
 ### Issue
-
-Cheaters often try to accelerate their gameplay by getting items from chests as fast as possible. Additionally,
-InventoryManager cheats try to equip and sort items in the player inventory as fast as possible.
+By automatically opening and looting items from chests and automatically sorting their own inventory, cheaters significantly ease their game experience.
 
 ### Detection
-
-Intave checks for unusual behavior while interacting with the inventory.
+The InventoryClickAnalysis check analyzes speed and accuracy of inventory clicks and 
 
 ### Accuracy
-
-InventoryClickAnalysis is able to detect most inventory cheats with advantages over legitimate players.
+The accuracy of this check is limited.<br>
+As with all detections checking for automated actions, it is not really possible to know whether the player is cheating or not.
 
 ### Issues
-
-TODO
+Unfortunately, a full distinction from legitimate behavior is not always possible; not even with a complete game
+protocol overhaul. Therefore, albeit difficult, it is and always will be theoretically possible to bypass this check.

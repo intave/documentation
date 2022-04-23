@@ -6,19 +6,14 @@
 `Since` Intave 13<br>
 
 ### Issue
-
-To gain an advantage in 1.8 combat, players try to click as fast as possible. Some players may try to abuse this and
-use autoclickers or clicking techniques forbidden on your server.
+By using macros or autoclickers, players gain a significant advantage by clicking very fast.
+Advantages include attack-slowdown/reducing and a significantly higher chance of earlier attacks.
 
 ### Detection
-
-This check enforces click speed limits set by your server. For that, Intave accurately counts how many times per second
-a player clicks.
+This check enforces a global click speed limit by counting player clicks and applying it to a given limit.
 
 ### Accuracy
-
-We take network lag into account wherever we can to make the CPS measurement as accurate as possible.
+The check should be quite accurate, especially for players on 1.8 servers.
 
 ### Issues
-
-On 1.9+ clients, you may encounter accuracy issues.
+On 1.9+ clients, you may experience small deviations.

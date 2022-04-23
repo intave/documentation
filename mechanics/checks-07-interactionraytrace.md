@@ -6,18 +6,14 @@
 `Since` Intave 14<br>
 
 ### Issue
-
-Reach cheats allow players to interact with entities further away. Some scaffold cheats allow players to not look at
-where they are placing blocks.
+When placing, interacting with, or breaking blocks, [players can state](https://wiki.vg/Protocol#Player_Digging) arbitrary block-positions and faces.<br>
+The server barely verifies this action, allowing players to break blocks through walls, place blocks behind them or place blocks way too far away.
 
 ### Detection
-
-We perform the client's raytrace to verify any interaction with entities and block placement.
+Intave re-performs the required raytrace, verifying that all placements, interactions and breaks are within reach and in sight.
 
 ### Accuracy
-
-[TODO]
+Since this check imitates the vanilla raytrace, it is extremely accurate.
 
 ### Issues
-
-[TODO]
+No known issues.
