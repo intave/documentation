@@ -1,17 +1,10 @@
 # Overview
 ### What is a check?
+A check is an algorithm designed to spot and patch different aspects of cheating.<br>
+Unique in purpose and structure, each check covers a large part of the spectrum, seeking high accuracy and minimal impact on normal gameplay.
 
-A check is an algorithm or algorithm cluster designed to find and mitigate aspects of cheating.
-
-Each check is responsible for covering a fairly large part of the spectrum, seeking high efficiency and accuracy,
-each with a different purpose, goal and structure.
-
-<!--
-All checks combined should cover the entire spectrum of cheats.
--->
-### What checks does Intave have?
-
-In total, we have 11 checks:
+### What checks are there?
+In total, Intave has 11 checks
 
 * [**AttackRaytrace**](checks-02-attackraytrace.md) *Reach and hitbox cheats*
 * [**BreakSpeedLimiter**](checks-03-breakspeedlimiter.md) *Fastbreak cheats*
@@ -25,4 +18,4 @@ In total, we have 11 checks:
 * [**ProtocolScanner**](checks-11-protocolscanner.md) *Various protocol inconsistencies*
 * [**Timer**](checks-12-timer.md) *Game speed changes*
 
-Combined, our checks cover the entire cheat-spectrum, with most vectors of attack.
+Combined, they form a robust cheat defense and detection
