@@ -1,41 +1,81 @@
 # Thresholds
 
-Intave allows you to customize actions executed at certain violation levels. A threshold
-configuration in the [settings.yml](configuration-02-settings.md) may look like this:
+Intave allows you to customize actions executed at certain violation levels.<br>
 
 ```
 thresholds:
-  50: "tell {player} Stop cheating or I will ban you!"
-  69: "tell {player} nice"
+  <number>: <command>
+  <number>:
+    - <command>
+    - <command>
+```
+
+Here's an example threshold section:
+```yaml
+thresholds:
+  1: "tell {player} You are cheating!"
+  2: "tell {player} You are cheating!"
+  # ...
+  99: "tell {player} You are cheating!"
   100:
     - "tell {player} I told you to stop cheating! Now deal with the consequences."
-    - "ban {player} Intave is always watching.
+    - "ban {player} Intave is always watching."
+```
+Once a player has reached a threshold, the given commands are executed in the order.<br>
+The `{player}` placeholder will be replaced with the detected player's name.<br>
+You can assign multiple commands to a single threshold with the [YAML list notation](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
+More placeholders are available [here](configuration-04-placeholders.md).
+## Multiple thresholds
+A check can have multiple thresholds.
+
+```yaml
+thresholds:
+  a:
+    - "tell {player} you are a cheater"
+    100:
+      - "tell {player} you are a bad cheater"
+      - "kick {player}"
+  b:
+    25: "tell {player} you are a cheater"
+    100:
+      - "tell {player} you are a very bad cheater"
+      - "ban {player}"
 ```
 
-In this example, we defined custom violation level thresholds (50, 69 and 100). Once a player has
-a violation level meeting a certain threshold, Intave executes the given command(s).
+::: warning NOTE
+Additional thresholds are pre-defined, you can not add more or remove existing ones.
+:::
 
-`{player}` is a variable which Intave will automatically replace with the detected player's name.
-Please read the [placeholder documentation](configuration-04-placeholders.md) for information on
-which variables Intave provides you with.
+### Confidence thresholds
 
-## Confidence Threshold
+The Heuristic's [confidence thresholds](configuration-02-settings.md#heuristics) makes use of this feature.<br>
+It allows you to define separate thresholds for the confidences ?, ! and !!.
 
-The [Heuristics configuration](configuration-02-settings.md#heuristics) introduces a variation of
-the standard thresholds system: You can configure thresholds for each confidence ("!!", "!", "?!").
-Apart from that, everything from the normal threshold system applies.
-
-Here's an example:
-
-```
+```yaml
 confidence-thresholds:
   "!!":
     25: "ban {player} You have been banned by Intave (Automatic Cheat Detection)."
-
   "!":
     25: "ban {player} You have been banned by Intave (Automatic Cheat Detection)."
-
   "?!":
     25: "tell {player} INTAVE IS ALWAYS WATCHING. 42 players have been banned in the last 5 minutes."
     50: "ban {player} You have been banned by Intave (Automatic Cheat Detection)."
+```
+
+### AttackRaytrace thresholds
+Same goes for the [AttackRaytrace thresholds](configuration-02-settings.md#attackraytrace).<br>
+Here we want to differentiate between attacking others from too far away and not even looking at the attacked.
+
+```yaml
+applicable-thresholds:
+  reach:
+    50: "tell {player} INTAVE IS ALWAYS WATCHING. 42 players have been banned in the last 5 minutes."
+    100:
+      - "alert {player} was banned for reach"
+      - "ban {player} You have been banned by Intave (Automatic Cheat Detection)."
+  hitbox:
+    50: "tell {player} INTAVE IS ALWAYS WATCHING. 42 players have been banned in the last 5 minutes."
+    100: 
+      - "alert {player} was kicked for hitbox"
+      - "kick {player} Cheating detected (hitbox)"
 ```

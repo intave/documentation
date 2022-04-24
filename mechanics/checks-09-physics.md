@@ -7,7 +7,7 @@
 `Links` [Config](/mechanics/configuration-02-settings.md#physics)<br>
 
 ### Issue
-Movement-related cheats can allow players to fly, move faster/slower or ignore knockback.
+Movement-related cheats allow players to use fly, move faster/slower or ignore knockback.
 The client just [informs the server](https://wiki.vg/Protocol#Player_Position) about its new position, 
 making it challenging to spot deviations.
 
@@ -36,9 +36,10 @@ In practice, this approach is useless.
 A cheater could just move with a vertical motion of -0.001 blocks/tick and bypass our entire example check.
 Or fly a total of 80 blocks straight upwards, no problem here.
 :::
-::: danger FALSE POSITIVES
+::: tip FALSE POSITIVES
 Our example check ignores a wide range of edge cases, like jump effects, elytra, water, velocity, etc - and
 writing a constraint-based check for every possible edge case doesn't help much.
+But with all edge cases in mind, the extremely poor protection shouldn't have a big impact on the game.
 :::
 
 #### Second generation
@@ -70,6 +71,7 @@ Because it is necessary to hardcode every possible edge case, these types of mov
 ::: warning FALSE POSITIVES
 The better edge cases are covered, the fewer false positives occur.
 But newer movement features require very complex coverage, making it very hard to natively support them.
+With limited 
 :::
 
 #### Third generation
@@ -101,8 +103,8 @@ fun simulateCorrectMotionFrom(lastMotion: Motion): Motion {
 By the very nature of this approach, it is almost impossible to bypass.
 :::
 ::: warning FALSE POSITIVES
-In theory, we shouldn't have any false positives, once we have covered all edge cases.
-But in practice, a NP-complete problem originating from the Minecraft protocol hinders us from archiving no false positives.
+In theory, this approach shouldn't have any false positives once all scenarios are covered.
+But in practice, a NP-complete problem originating from the Minecraft protocol hinders us all from archiving zero false positives.
 :::
 
 ### Detection

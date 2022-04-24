@@ -1,35 +1,23 @@
 # Mechanics
+Enhance your knowledge and understanding of our work with this mechanics section, containing details on how Intave fundamentally works.
 
-The mechanics section gives details in how Intave fundamentally works, improving general knowledge and understanding of
-our work.
+<!--The mechanics section gives details in how Intave fundamentally works, improving general knowledge and understanding of
+our work.-->
 
-## Configuration
+### Configuration
+Want to change something? We've got you covered here.<br>
+Specify which settings you want to use in [config.yml](configuration-01-config.md).<br>
+In [settings.yml](configuration-02-settings.md) you can actually change Intaves behaviour and actions.
 
-Here you will learn about configuring Intave to your needs.
+We have neat [placeholders](configuration-04-placeholders.md) for you, too <3
 
-* [Placeholders](configuration-04-placeholders.md)
 
-## Checks
+### Checks
+Want to know more about our checks? Browse our [check section](checks-01-overview.md).
 
-Want to know more details about our checks? Please read through the
-[checks section](checks-01-overview.md). There you will learn what they do, how they work and why we
-decided for certain tradeoffs.
+### Trustfactor
+What is a trustfactor, why is it so beneficial, and how does it work?<br>
+Check out our [trustfactor section](trust-01-introduction.md) for more information.
 
-## Trustfactor
-
-In this section we explain how Intave's trust factor system works and how it can help your server. Start reading
-[here](trust-01-introduction.md).
-
-## Permissions
-
-Please read the [permissions overview](permissions-01-overview.md) to learn what permissions Intave
-uses.
-
-## Configuration
-
-Intave generates two configuration files:
-
-* [`config.yml`](configuration-01-config.md)
-* [`settings.yml`](configuration-02-settings.md)
-
-Additionally, Intave has several [settings placeholders](configuration-04-placeholders.md).
+### Permissions
+You are hereby permitted to check out our [section on permissions](permissions-01-overview.md).
