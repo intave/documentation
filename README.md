@@ -3,7 +3,7 @@ home: true
 heroText: Intave
 tagline: Documentation, guides and mechanics
 actionText: Get started
-actionLink: /guides/intave-02-getting-started.html
+actionLink: /guides/intave-01-getting-started.html
 ---
 
 <div class="features">
