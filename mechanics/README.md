@@ -1,16 +1,14 @@
 # Mechanics
-Enhance your knowledge and understanding of our work with this mechanics section, containing details on how Intave fundamentally works.
+Are you ready to enhance your knowledge and understanding of our work?<br>
+This section is dedicated to details on how Intave works.
 
 <!--The mechanics section gives details in how Intave fundamentally works, improving general knowledge and understanding of
 our work.-->
 
 ### Configuration
-Want to change something? We've got you covered here.<br>
 Specify which settings you want to use in [config.yml](configuration-01-config.md).<br>
-In [settings.yml](configuration-02-settings.md) you can actually change Intaves behaviour and actions.
-
-We have neat [placeholders](configuration-04-placeholders.md) for you, too <3
-
+In [settings.yml](configuration-02-settings.md) you can change Intaves behaviour and actions.<br>
+We have neat [placeholders](configuration-04-placeholders.md), too
 
 ### Checks
 Want to know more about our checks? Browse our [check section](checks-01-overview.md).
