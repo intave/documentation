@@ -41,12 +41,3 @@ All virtual machines on the same root machine should have the same folder mounte
 Virtual machines on different root machines must not share the same folder.<br>
 A [guide](/guides/asset-02-bootstrap.md) is available for Pterodactyl users.
 :::
-
-## Further Information
-
-### Security
-Carefully consider who to grant access to your servers.
-Use password-protected SSH keys to securely access your servers.<br>
-You take full responsibility for the safety of your Intave copy and
-are liable for any damages. If you run into irreversible and serious security problems
-with Intave installed, contact us immediately. We offer help to mitigate any potential damage.
