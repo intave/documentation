@@ -6,7 +6,7 @@
 `Since` Intave 14<br>
 
 ### Issue
-Reach cheats allow players to attack other entities further away, for example from 3.5 blocks.<br>
+Reach cheats allow players to attack others from further away, for example from 3.5 blocks.<br>
 The vanilla client-side limit for entity interactions in survival mode is 3.0 blocks.
 
 ### Detection
