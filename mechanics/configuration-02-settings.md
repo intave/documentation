@@ -13,14 +13,14 @@ Parent section for all [checks](/mechanics/checks-01-overview.md)<br>
 
 <a name="physics"></a>
 ```yaml
-  # The physics check
-  physics:
+# The physics check
+physics:
 ```
 
 Settings for the [Physics](checks-09-physics.md) check
 
 ```yaml
-    high-tolerance: false
+high-tolerance: false
 ```
 `Name:` high-tolerance<br>
 `Description:` Enables high tolerance mode for the check. Use this if many players on your server
@@ -29,7 +29,7 @@ have a bad internet connection.<br>
 `Default:` false<br>
 
 ```yaml
-    mitigation: CAREFUL
+mitigation: CAREFUL
 ```
 `Name:` mitigation<br>
 `Description:` Determines how aggressive Intave's setbacks are. [What?](/mechanics/checks-09-physics.md#mitigation-strategy) <br>
@@ -37,7 +37,7 @@ have a bad internet connection.<br>
 `Default:` CAREFUL<br>
 
 ```yaml
-    reset-item-usage: true
+reset-item-usage: true
 ```
 `Name:` reset-item-usage<br>
 `Description:` Enables Intave to reset item usage (for examples eating) when Intave detects
@@ -46,7 +46,7 @@ anomalies.<br>
 `Default:` true<br>
 
 ```yaml
-    close-inventory-on-detection: true
+close-inventory-on-detection: true
 ```
 `Name:` close-inventory-on-detection<br>
 `Description:` Enables Intave to close the player inventory when Intave setbacks the player.<br>
@@ -54,9 +54,9 @@ anomalies.<br>
 `Default:` true<br>
 
 ```yaml
-    # thresholds for the physics check
-    thresholds:
-      # ...
+# thresholds for the physics check
+thresholds:
+  # ...
 ```
 `Name:` thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -74,13 +74,13 @@ anomalies.<br>
 <br>
 
 ```yaml
-  # The timer check
-  timer:
+# The timer check
+timer:
 ```
 Settings for the [Timer](checks-12-timer.md) check.
 
 ```yaml
-    high-tolerance: false
+high-tolerance: false
 ```
 `Name:` high-tolerance<br>
 `Description:` Enables high tolerance mode for the check. Use this if many players on your server
@@ -89,8 +89,8 @@ have a bad internet connection.<br>
 `Default:` false<br>
 
 ```yaml
-    thresholds:
-      # ...
+thresholds:
+  # ...
 ```
 `Name:` thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -105,14 +105,14 @@ have a bad internet connection.<br>
 
 <a name="heuristics"></a>
 ```yaml
-  # The movement check
-  heuristics:
+# The movement check
+heuristics:
 ```
 
 Settings for the [Heuristics](checks-06-heuristics.md) check.
 
 ```yaml
-    enabled: true
+enabled: true
 ```
 `Name:` enabled<br>
 `Description:` Enables the [Heuristics](checks-06-heuristics.md) check.<br>
@@ -120,7 +120,7 @@ Settings for the [Heuristics](checks-06-heuristics.md) check.
 `Default:` true<br>
 
 ```yaml
-    combat-sampling: false
+combat-sampling: false
 ```
 `Name:` combat-sampling<br>
 `Description:` Grants Intave permission to record and upload player combat data. See our [Service Terms](https://policy.intave.de/service) for details on the collected information.<br>
@@ -128,7 +128,7 @@ Settings for the [Heuristics](checks-06-heuristics.md) check.
 `Default:` false<br>
 
 ```yaml
-    disable-reducing: false
+disable-reducing: false
 ```
 `Name:` disable-reducing<br>
 `Description:` Disables attack cooldown. While this option significantly reduces the impact of autoclickers, it in itself has a huge impact on normal gameplay as well.<br>
@@ -136,7 +136,7 @@ Settings for the [Heuristics](checks-06-heuristics.md) check.
 `Default:` false<br>
 
 ```yaml
-    confidence-thresholds: 
+confidence-thresholds: 
 ```
 `Name:` confidence-thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -164,14 +164,14 @@ Settings for the [Heuristics](checks-06-heuristics.md) check.
 
 <a name="attackraytrace"></a>
 ```yaml
-  # The attackraytrace check
-  attackraytrace:
+# The attackraytrace check
+attackraytrace:
 ```
 
 Settings for the [AttackRaytrace](checks-02-attackraytrace.md) check.
 
 ```yaml
-    enabled: true
+enabled: true
 ```
 `Name:` enabled<br>
 `Description:` Enables the [AttackRaytrace](checks-02-attackraytrace.md) check.<br>
@@ -179,7 +179,7 @@ Settings for the [AttackRaytrace](checks-02-attackraytrace.md) check.
 `Default:` true<br>
 
 ```yaml
-    applicable-thresholds:
+applicable-thresholds:
 ```
 `Name:` applicable-thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -202,14 +202,14 @@ hitbox:
 
 <a name="interactionraytrace"></a>
 ```yaml
-  # The interactionraytrace check
-  interactionraytrace:
+# The interactionraytrace check
+interactionraytrace:
 ```
 
 Settings for the [InteractionRaytrace](checks-07-interactionraytrace.md) check.
 
 ```yaml
-    enabled: true
+enabled: true
 ```
 `Name:` enabled<br>
 `Description:` Enables the [InteractionRaytrace](checks-07-interactionraytrace.md) check.<br>
@@ -217,7 +217,7 @@ Settings for the [InteractionRaytrace](checks-07-interactionraytrace.md) check.
 `Default:` true<br>
 
 ```yaml
-    thresholds:
+thresholds:
 ```
 `Name:` thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -233,14 +233,14 @@ Settings for the [InteractionRaytrace](checks-07-interactionraytrace.md) check.
 
 <a name="clickpatterns"></a>
 ```yaml
-  # The clickpatterns check
-  clickpatterns:
+# The clickpatterns check
+clickpatterns:
 ```
 
 Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.
 
 ```yaml
-    enabled: true
+enabled: true
 ```
 `Name:` enabled<br>
 `Description:` Enables the [ClickPatterns](checks-04-clickpatterns.md) check.<br>
@@ -248,7 +248,7 @@ Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.
 `Default:` true<br>
 
 ```yaml
-    thresholds:
+thresholds:
 ```
 `Name:` thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -267,13 +267,13 @@ Settings for the [ClickPatterns](checks-04-clickpatterns.md) check.
 
 <a name="clickspeedlimiter"></a>
 ```yaml
-  # The clickspeedlimiter check
-  clickspeedlimiter:
+# The clickspeedlimiter check
+clickspeedlimiter:
 ```
 Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.
 
 ```yaml
-    enabled: true
+enabled: true
 ```
 `Name:` enabled<br>
 `Description:` Enables the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.<br>
@@ -281,7 +281,7 @@ Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.
 `Default:` true<br>
 
 ```yaml
-    max-cps:
+max-cps:
 ```
 `Name:` max-cps<br>
 `Description:` Sets the maximum amount of clicks per second a player may use.<br>
@@ -289,7 +289,7 @@ Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.
 `Default:` 20<br>
 
 ```yaml
-    thresholds:
+thresholds:
 ```
 `Name:` thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -308,14 +308,14 @@ Settings for the [ClickSpeedLimiter](checks-05-clickspeedlimiter.md) check.
 
 <a name="breakspeedlimiter"></a>
 ```yaml
-  # The breakspeedlimiter check
-  breakspeedlimiter:
+# The breakspeedlimiter check
+breakspeedlimiter:
 ```
 
 Settings for the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.
 
 ```yaml
-    enabled: true
+enabled: true
 ```
 `Name:` enabled<br>
 `Description:` Enables the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.<br>
@@ -323,7 +323,7 @@ Settings for the [BreakSpeedLimiter](checks-03-breakspeedlimiter.md) check.
 `Default:` true<br>
 
 ```yaml
-    thresholds:
+thresholds:
 ```
 `Name:` thresholds<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
@@ -360,7 +360,7 @@ If you experience false positives, lower this number or set it to 0.<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
 `Type:` [Thresholds](configuration-03-thresholds.md)<br>
 `Default:`<br>
-```
+```yaml
 50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is sending invalid packets"
 100:
   - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for sending invalid packets"
@@ -389,7 +389,7 @@ production as some servers may experience false positives with it.<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
 `Type:` [Thresholds](configuration-03-thresholds.md)<br>
 `Default:`<br>
-```
+```yaml
 50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is placing blocks incorrectly"
 100:
   - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for placing blocks incorrectly"
@@ -418,7 +418,7 @@ have a bad internet connection.<br>
 `Description:` Actions Intave should execute when detecting a player.<br>
 `Type:` [Thresholds](configuration-03-thresholds.md)<br>
 `Default:`<br>
-```
+```yaml
 50: "intave internals sendnotify &c{player}&7/{trust-color}&7 is performing invalid item-operations"
 100:
   - "intave internals sendnotify &c{player}&7/{trust-color}&7 has been removed for clicking suspiciously on items"
