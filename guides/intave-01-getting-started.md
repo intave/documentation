@@ -1,8 +1,8 @@
 # Getting started
 ## Purchase
-The first step is to buy Intave, available at [https://intave.de](https://intave.de)
+In case you don't already have Intave, it is available at [https://intave.de](https://intave.de)
 
-## Installation
+## Install
 #### Installing Intave with Bootstrap
 1. [Download Intave Bootstrap](https://app.intave.de/download)
 2. Copy the downloaded file into your server's plugin folder.
@@ -21,19 +21,18 @@ You have successfully installed Intave, congratulations!
 But we need more step to boot Intave properly.
 <br>
 
-## Verification
+## Verify
 Before you begin, you must verify the machine you are using.
 
 1. Visit [https://intave.de/hardware](https://app.intave.de/hardware)
 2. Alongside verified hardware, you can see currently pending verification requests.
 3. Carefully review and accept verification requests.
 ::: danger 
-If you do not recognize a verification request, contact us
-4. .
+If you do not recognize a verification request, contact us.
 :::
-5. Start your server once again. Intave should now properly boot.
-
-::: tip
+4. Start your server once again.
+5. Done!
+::: tip NOTE
 In case you are using Pterodactyl, Docker or Kubernetes,
 you need to mount the folder ~/.intave/ (in the home directory of the current user in the virtual machine) 
 to a custom, shared folder.

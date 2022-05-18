@@ -13,11 +13,12 @@ A player could modify their game to process 40 ticks/s instead of the default 20
 ### Detection
 Intave keeps track of the movement packets sent by the client in a variable amount of time.
 If the amount of packets sent exceeds a certain threshold, enhanced by our [trustfactor](/mechanics/trust-01-introduction.md) mechanic, 
-Intave will skip movement packets ahead.
+Intave will start to skip movement packets.
 
 ### Accuracy
-The Timer check is able to mitigate any advantage of increasing the game speed.
+The Timer check is able to detect as little as one movement packet more, 
+and is able to mitigate even the most extreme cases.
 
 ### Issues
-Latency fluctuations and client lag can cause false positives. This is due to the limited information the Minecraft
-protocol provides us with. 
+Latency fluctuations and client lag can cause false positives.
+While we try to mitigate these issues, it is not always possible.

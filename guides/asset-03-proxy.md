@@ -1,4 +1,4 @@
-# Proxy Support
+# Proxy
 
 Intave is a Spigot plugin, but likely you'd like kicks and bans to be executed on your whole network. Use our Proxy
 Support plugin to execute commands on your Bungeecord instance remotely from spigot.

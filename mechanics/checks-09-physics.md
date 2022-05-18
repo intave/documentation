@@ -70,8 +70,7 @@ Because it is necessary to hardcode every possible edge case, these types of mov
 :::
 ::: warning FALSE POSITIVES
 The better edge cases are covered, the fewer false positives occur.
-But newer movement features require very complex coverage, making it very hard to natively support them.
-With limited 
+But newer movement features require very complex coverage, making it unbelievably hard to natively support them.
 :::
 
 #### Third generation
@@ -109,7 +108,7 @@ But in practice, a NP-complete problem originating from the Minecraft protocol h
 
 ### Detection
 By comparing player movement with its own simulations of game code, the physics check can spot almost all movement
-cheats. Spanning over thousands of lines of code in more than a hundred class files, it is the most complicated check in Intave.<br>
+cheats. Spanning over thousands of lines of code in more than a hundred class files, it is the most sophisticated check in Intave.<br>
 
 ::: details Supported features
 The simulations account for<br> 
@@ -148,7 +147,7 @@ a set of pre-build mitigation strategies is available:
 :::
 
 ::: tip
-Use [trustfactors](/mechanics/trust-01-introduction.md) to significantly lower false positives.
+Use [trustfactors](/mechanics/trust-01-introduction.md) to significantly lower false positive/negative rates.
 :::
 
 ### Accuracy
@@ -157,10 +156,10 @@ The check is able to detect any deviation in movement, meaning we can detect any
 ### Issues
 Although the physics check is Intave's most accurate, the sheer amount of data processed can cause problems.<br>
 Given a hundred million movements, a false positive rate of just 0.01%^[This average was measured over a period of
-several weeks on a subserver on GommeHD.net with 350 concurrent players at peak times.] (five immediately consecutive false positives per player per hour) would still result in ten thousand false positives.<br>
+several weeks on a subserver on GommeHD.net with 350 concurrent players at peak times.] (five immediately consecutive false positives per player per hour) would still result in ten thousand false positives overall.<br>
 
 To combat the impact of this issue, the mitigation/setback system needs to operate as smoothly as possible, for the player himself and others.
-In fact, other players shouldn't be able to differentiate a player moving normally and him/her trying to fly.<br>
+The mitigation system is designed so that other players shouldn't be able to differentiate a player moving normally and him/her trying to fly.<br>
 To ensure a setback/mitigation feels smooth to the player too, we apply the expected motion as velocity, additional to the rotationless teleport.
 
 ::: warning

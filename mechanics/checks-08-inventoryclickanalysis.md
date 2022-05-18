@@ -9,7 +9,7 @@
 By automatically opening and looting items from chests and automatically sorting their own inventory, cheaters significantly ease their game experience.
 
 ### Detection
-The InventoryClickAnalysis check analyzes speed and accuracy of inventory clicks and 
+The InventoryClickAnalysis check analyzes speed and accuracy of inventory clicks.
 
 ### Accuracy
 The accuracy of this check is limited.<br>

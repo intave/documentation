@@ -1,9 +1,11 @@
 # Recommendations
+<!--
 Intave does not set the trust factor by itself. <br>
 You will have to - either with [intave/access](https://github.com/intave/access) or with good old permissions,
 otherwise we will just assign the 🟧 Orange Trust Factor or a different given default.<br>
 
 ## What trustfactor should I set?
+-->
 Give **high-level**, **long-time-playing** and **trusted** players a 🟨 Yellow Trust Factor.<br>
 Only give a 🟩 Green Trust Factor to players you **trust blindly** - for example your **staff members**, **yourself** and
 players with something like the client-side **Badlion AntiCheat** enabled.<br>

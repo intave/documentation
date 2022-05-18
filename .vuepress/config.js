@@ -23,15 +23,15 @@ module.exports = {
             "/mechanics/": [
                 "",
                 sidebarMap("mechanics", "configuration-", "Configuration"),
-                sidebarMap("mechanics", "checks-", "Checks"),
+                sidebarMap("mechanics", "checks-", "Detection"),
                 sidebarMap("mechanics", "trust-", "Trustfactor"),
                 sidebarMap("mechanics", "permissions-", "Permissions")
             ],
             "/guides/": [
                 "",
-                sidebarMap("guides", "intave-", "For Intave"),
-                sidebarMap("guides", "asset-", "For Assets"),
-                sidebarMap("guides", "external-", "Other")
+                sidebarMap("guides", "intave-", "Intave"),
+                sidebarMap("guides", "asset-", "Assets")/*,
+                sidebarMap("guides", "external-", "Other")*/
             ],
         }
     },

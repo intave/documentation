@@ -21,12 +21,12 @@ thresholds:
     - "tell {player} I told you to stop cheating! Now deal with the consequences."
     - "ban {player} Intave is always watching."
 ```
-Once a player has reached a threshold, the given commands are executed in the order.<br>
+Once a player has reached a threshold, the given commands are executed in given order.<br>
 The `{player}` placeholder will be replaced with the detected player's name.<br>
 You can assign multiple commands to a single threshold with the [YAML list notation](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
 More placeholders are available [here](configuration-04-placeholders.md).
 ## Multiple thresholds
-A check can have multiple thresholds.
+A check can have multiple thresholds, too.
 
 ```yaml
 thresholds:

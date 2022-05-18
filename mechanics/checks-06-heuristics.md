@@ -7,7 +7,7 @@
 
 ### Issue
 Combat automation cheats like "KillAura" automatically attack other players, often leading to advantages.
-This type of cheating is usually very obvious to other players, but very hard to detect with code.
+While this type of cheating is usually very obvious to other players, it is very hard to detect with code.
 
 ### History
 Detecting combat automations has always been a difficulty.
@@ -17,13 +17,13 @@ When cheaters started to exclude bot players, that often even annoyed normal pla
 
 The next big anticheat move was to check if attackers were actually looking at the attacked.
 While this is generally a good idea (see [AttackRaytrace](checks-02-attackraytrace.md)),
-its detection did at the time little to mitigate killaura cheats.
+combat automation modules adapted fairly quickly by just automatically looking at the attacked.
 
-Only when anti-cheats started to fall back to analytical approaches, cheaters needed to get creative.
+Only when anti-cheats started to introduce secret analytical approaches, cheaters needed to get creative.
 Randomized aim, limited/prioritized targets and smooth rotations were now a requirement.
 
-The last big anti-cheat move was to check whether the player's rotation actually matches their movement.
-killauras at the time just told the server where they were looking at, without actually applying their fake rotations.
+The very last big anti-cheat move was to check whether the player's rotation actually matches their movement.
+Killauras at the time just told the server where they were looking at, without actually applying their fake rotations to their movement.
 Our [Physics](checks-09-physics.md) check covers these old killauras.
 Clients now need to adjust their movement to their spoofed rotations, often resulting in weird and inconvenient movement.
 
