@@ -333,29 +333,45 @@ thresholds:
 100: "intave internals sendnotify &c{player}&7/{trust-color}&7 is breaking blocks too quickly"
 ```
 
-### protocolscanner
+<br>
+<br>
+
+<a name="protocolscanner"></a>
+```yaml
+# The protocolscanner check
+protocolscanner:
+```
+
 Settings for the [ProtocolScanner](checks-11-protocolscanner.md) check.
 
-#### enabled
+```yaml
+enabled: true
+```
 
 `Description:` Enables the [ProtocolScanner](checks-11-protocolscanner.md) check.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-#### invokant
+```yaml
+invokant: false
+```
 
 `Description:` *Currently unused.*<br>
 `Type:` Boolean<br>
 `Default:` false<br>
 
-#### check_sent_slot_twice_vl
+```yaml
+check_sent_slot_twice_vl: 100
+```
 
 `Description:` Allows you to modify the violation level of when the client sends a slot twice.
 If you experience false positives, lower this number or set it to 0.<br>
 `Type:` Intave<br>
 `Default:` 100<br>
 
-#### thresholds
+```yaml
+thresholds:
+```
 
 `Description:` Actions Intave should execute when detecting a player.<br>
 `Type:` [Thresholds](configuration-03-thresholds.md)<br>
@@ -368,24 +384,34 @@ If you experience false positives, lower this number or set it to 0.<br>
   - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
 ```
 
-### placementanalysis
+<br>
+<br>
+
+<a name="placementanalysis"></a>
+```yaml
+# The placementanalysis check
+placementanalysis:
+```
 Settings for the [PlacementAnalysis](checks-10-placementanalysis.md) check.
 
-#### enabled
-
+```yaml
+enabled: true
+```
 `Description:` Enables the [PlacementAnalysis](checks-10-placementanalysis.md) check.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-#### check_timings
-
+```yaml
+check_timings: false
+```
 `Description:` Enables time based scaffold checks. Please test this setting before enabling it on
 production as some servers may experience false positives with it.<br>
 `Type:` Boolean<br>
 `Default:` false<br>
 
-#### thresholds
-
+```yaml
+thresholds:
+```
 `Description:` Actions Intave should execute when detecting a player.<br>
 `Type:` [Thresholds](configuration-03-thresholds.md)<br>
 `Default:`<br>
@@ -397,24 +423,34 @@ production as some servers may experience false positives with it.<br>
   - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
 ```
 
-### inventoryclickanalysis
+<br>
+<br>
+
+<a name="inventoryclickanalysis"></a>
+```yaml
+# The inventoryclickanalysis check
+inventoryclickanalysis:
+```
 Settings for the [InventoryClickAnalysis](checks-08-inventoryclickanalysis.md) check.
 
-#### enabled
-
+```yaml
+enabled: true
+```
 `Description:` Enables the [InventoryClickAnalysis](checks-08-inventoryclickanalysis.md) check.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-#### high-tolerance
-
+```yaml
+high-tolerance: false
+```
 `Description:` Enables high tolerance mode for the check. Use this if many players on your server
 have a bad internet connection.<br>
 `Type:` Boolean<br>
 `Default:` false<br>
 
-#### thresholds
-
+```yaml
+thresholds:
+```
 `Description:` Actions Intave should execute when detecting a player.<br>
 `Type:` [Thresholds](configuration-03-thresholds.md)<br>
 `Default:`<br>
@@ -426,44 +462,81 @@ have a bad internet connection.<br>
   - "kick {player} &cYou have been removed from the game based on data that was collected by the anti-cheat"
 ```
 
-## blacklist
-### apply
+<br>
+<br>
+<br>
+<br>
 
-`Description:` Enables Intave's internal blacklist of known cheaters and players dangerous to your
+```yaml
+# blacklist section
+blacklist:
+```
+Blacklist section.
+
+```yaml
+apply: true
+```
+
+`Description:` Enables Intaves internal blacklist of known cheaters and players dangerous to your
 server and Intave.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-## proxy
-### enable
+<br>
 
+```yaml
+# proxy section
+proxy:
+```
+Proxy section.
+
+```yaml
+enabled: true
+```
 `Description:` Enables Intave's proxy support. Only enable this option if you are using the
 [Proxy Support](/guides/asset-03-proxy.md) plugin.<br>
 `Type:` Boolean<br>
 `Default:` false<br>
 
-## clientwarning
-### enable
+<br>
 
+```yaml
+# client-warning section
+clientwarning:
+```
+Client warning section.
+
+```yaml
+enabled: true
+```
 `Description:` Warning system for bugged legit clients.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-## filter
-### health
 
+```yaml
+# filter section
+filter:
+```
+Filter section.
+
+```yaml
+health: true
+```
 `Description:` If enabled, Intave will not send health data of other entities to the client. This
 doesn't affect legitimate players but may impact (cheat) clients with damage indicators.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-### equipmentdata
-
+```yaml
+equipmentdata: true
+```
 `Description:` If enabled, Intave will not send equipment data of other entities to the client. This
 doesn't affect legitimate players but may impacts cheat clients.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
+<!--
 ### chat-insults
 
 `Description:` _Currently unused._<br>
@@ -475,69 +548,99 @@ doesn't affect legitimate players but may impacts cheat clients.<br>
 `Description:` _Currently unused._<br>
 `Type:` Boolean<br>
 `Default:` true<br>
+-->
+```yaml
+# commands section
+command:
+```
+Command section.
 
-## command
-### hide
-
-`Description:` If activated, hides Intave's commands from normal players. Messages with the regular
+```yaml
+hide: true
+```
+`Description:` If activated, hides Intaves commands from normal players. Messages with the regular
 Intave command are replaced with a command that does not exist. This way, your custom error messages
 will apply.<br>
 `Type:` True/False<br>
 `Default:` true<br>
 
-## rejoin
-
+```yaml
+# rejoin section
+rejoin:
+```
 Configuration for Intave's behavior when a player that has recently been kicked rejoins.
 
-### delay
-
+```yaml
+delay: 3600
+```
 `Description:` How many ticks (1 tick = 50ms) a recently kicked player must wait until they can
 rejoin.<br>
 `Type:` Number<br>
 `Default:` 3600<br>
 
-### refresh
-
+```yaml
+refresh: true
+```
 `Description:` Whether Intave should reset the delay timer if a player tries to rejoin before the
 delay has expired.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-### message
+```yaml
+message: "&cYou were recently removed, please wait before connecting again"
+```
 
 `Description:` What kick message Intave should use in this scenario.<br>
 `Type:` Text<br>
 `Default:` "&cYou were recently removed, please wait before connecting again"<br>
 
-## logging
-### console-log
+```yaml
+# logging section
+logging:
+```
+Logging section.
 
+```yaml
+console-log: false
+```
 `Description:` Whether Intave should log verbose messages to the console.<br>
 `Type:` Boolean<br>
 `Default:` false<br>
 
-### file-log
+```yaml
+file-log: true
+```
 
 `Description:` Whether Intave should log verbose messages to the file system.<br>
 `Type:` Boolean<br>
 `Default:` true<br>
 
-## layout
-### verbose
+```yaml
+# layout section
+layout:
+```
+Layout section.
+
+```yaml
+verbose: {prefix} &c{player}&7/{trust-color}&7 {message} {details} (+{vladded} -> {vl})
+```
 
 `Description:` The verbose message format. Please note you can use
 [placeholders](configuration-04-placeholders.md).<br>
 `Type:` Text<br>
 `Default:` "{prefix} &c{player}&7/{trust-color}&7 {message} {details} (+{vladded} -> {vl})"<br>
 
-### notify
-
+```yaml
+notify: {prefix} &c&lNotify&8: &7{text}
+```
 `Description:` The notify message format. Please note you can use
 [placeholders](configuration-04-placeholders.md).<br>
 `Type:` Text<br>
 `Default:` "{prefix} &c&lNotify&8: &7{text}"<br>
 
-### prefix
+```yaml
+prefix: "&8[&c&lIntave&8]&7 "
+```
 
 `Description:` Value of the `{prefix}` placeholder.<br>
 `Type:` Text<br>

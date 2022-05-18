@@ -14,10 +14,10 @@ Dark-Red Trust Factor.<br>
 If you have Bedrock players on your server, give them the :white_large_square: White Trust Factor. Minecraft Bedrock
 significantly changes the protocol and would get flagged otherwise.
 
-::: danger
-1. **Don't show players their trust factor**, as this would allow for trustfactor mapping reverse-engineering.<br>
-2. **Don't publish your trust factor mappings/code**, as it would allow for trustfactor reverse-engineering<br>
-3. **Avoid giving new players a high (🟨 Yellow, 🟩 Green, :white_large_square: White) trustfactor**<br>
+:::danger WARNING
+1. Don't show players their trust factor, as this would allow for trustfactor mapping reverse-engineering.<br>
+2. Don't publish your trust factor mappings/code, as it would allow for trustfactor reverse-engineering<br>
+3. Avoid giving new players a high (🟨 Yellow, 🟩 Green, :white_large_square: White) trustfactor<br>
 :::
 
 ## Indicators for trust
@@ -29,7 +29,7 @@ player.<br>
 While in theory cheaters could get ranks and a lot of playtime, most of them just don't bother investing hours into an account, which they usually don't even keep for long.
 When banned, you would require them to play another X hours and get another rank, just to abuse trust factor advantages.
 
-::: tip
+:::tip NOTE
 You might want to take chargebacks/refunds into account, a purchase that can arbitrarily be refunded is a questionable trust indicator.<br>
 :::
 ## Indicators for distrust

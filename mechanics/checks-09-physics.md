@@ -24,22 +24,23 @@ fun checkMovement(
   motion: Motion,
   ticksInAir: Int,
 ) {
-  if (ticksInAir > 20 && motion.getY() >= 0) {
+  if (ticksInAir > 20 && motion.motionY() >= 0) {
     player.kick("Floating too long in the air")
   }
 }
 //...
 ```
 :::
-::: danger BYPASSES
+::: danger High amount of false negatives
 In practice, this approach is useless.
 A cheater could just move with a vertical motion of -0.001 blocks/tick and bypass our entire example check.
 Or fly a total of 80 blocks straight upwards, no problem here.
 :::
-::: tip FALSE POSITIVES
+::: tip Few false positives
 Our example check ignores a wide range of edge cases, like jump effects, elytra, water, velocity, etc - and
 writing a constraint-based check for every possible edge case doesn't help much.
 But with all edge cases in mind, the extremely poor protection shouldn't have a big impact on the game.
+Although when false positives occur, they tend to be punished very harshly, in our example with a forced disconnection.
 :::
 
 #### Second generation
@@ -62,13 +63,13 @@ fun checkMovement(
 ```
 :::
 
-::: warning BYPASSES
-The more edge cases covered, the fewer bypasses occur.
-And with newer versions of the game, it will get impossibly hard to cover all of them.
+::: warning Medium amount of false negatives
+The more edge cases covered, the fewer false negatives / bypasses occur.
+And with newer versions of the game, it gets unbelievably hard to cover all of them.
 The reactive nature of this approach will not cover proactive mechanics, like velocity or slime jumps.
-Because it is necessary to hardcode every possible edge case, these types of movement checks usually grow exponentially in size and complexity.
+Since it is necessary to hardcode every possible edge case, these types of movement checks usually grow exponentially in size and complexity.
 :::
-::: warning FALSE POSITIVES
+::: warning Medium amount of false positives
 The better edge cases are covered, the fewer false positives occur.
 But newer movement features require very complex coverage, making it unbelievably hard to natively support them.
 :::
@@ -98,12 +99,12 @@ fun simulateCorrectMotionFrom(lastMotion: Motion): Motion {
 }
 ```
 :::
-::: tip BYPASSES
-By the very nature of this approach, it is almost impossible to bypass.
+::: tip Few false negatives
+By its very nature, this approach is almost impossible to circumvent.
 :::
-::: warning FALSE POSITIVES
-In theory, this approach shouldn't have any false positives once all scenarios are covered.
-But in practice, a NP-complete problem originating from the Minecraft protocol hinders us all from archiving zero false positives.
+::: warning Medium amount of false positives
+In theory, this approach shouldn't have any false positives once all movement features are covered.
+But in practice, a NP-complete problem originating from uncertainties in the Minecraft protocol prevents archiving zero false positives.
 :::
 
 ### Detection

@@ -31,7 +31,7 @@ A check can have multiple thresholds, too.
 ```yaml
 thresholds:
   a:
-    - "tell {player} you are a cheater"
+    50: "tell {player} you are a cheater"
     100:
       - "tell {player} you are a bad cheater"
       - "kick {player}"
@@ -44,6 +44,7 @@ thresholds:
 
 ::: warning NOTE
 Additional thresholds are pre-defined, you can not add more or remove existing ones.
+In our example, you could not add a threshold c, or remove threshold a.
 :::
 
 ### Confidence thresholds

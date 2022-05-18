@@ -1,6 +1,9 @@
 # Mechanics
-Need to know something about...?
-[Permissions]
+Need to know something about...<br>
+the [configuration](/mechanics/configuration-01-config.md),<br>
+our [cheat detection](/mechanics/checks-01-overview.md),<br>
+the [trustfactor mechanic](/mechanics/trust-01-introduction.md),<br>
+or our [permissions](/mechanics/permissions-01-overview.md)?
 
 
 <!--The mechanics section gives details in how Intave fundamentally works, improving general knowledge and understanding of

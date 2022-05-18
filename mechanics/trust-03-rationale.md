@@ -17,14 +17,14 @@ to tell which is which.
 As anticheat developer, you start drawing a fixed line of differentiation between the two categories, praying to the
 gods that it is somewhat balanced.
 
-::: tip EXAMPLE
+::: tip An example
 Any lag over 3 seconds is illegitimate and needs to be mitigated/set-backed.
 :::
 
 Experience shows in cases where our line is blurry, this never really works, no matter where you put it. Either players
 will complain about false positives or complain about bypasses.
 
-::: tip EXAMPLE
+::: danger Issues with this example
 With three seconds as limit, cheaters can now buffer packets and blink-teleport
 (`3s * 20 ticks/second * ~0.4 blocks/ticks = 20 blocks`) **and** players with a weak connection will complain about
 being mitigated wrongfully.
@@ -43,12 +43,13 @@ And Intave 14's accuracy actually contributes to even more uncertainty for us to
 
 ## Our Way
 
-We learned two things:
+We learned three things:
 
-1. We as anticheat developers should take the over responsibility for making balanced anticheat differentiations.
-2. Different rules are required for different players.
+1. Anti-Cheat developers **alone** must be responsible for differentiations between cheating and legit.
+2. Don't let customers change highly-technical details.
+3. Different rules are required for different players.
 
-We came up with the idea of categorizing players in groups: the bypassing, the highly trusted, the trusted, the casuals,
+We came up with the idea of categorizing players in six groups: the ignored, the highly trusted, the trusted, the casuals,
 the suspicious, and the very suspicious. This translates quite nicely to color and to the idea of something like a
 trust factor.
 

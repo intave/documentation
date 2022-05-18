@@ -9,6 +9,7 @@
 
 Scaffold cheats automatically place blocks under players, so they don't have to bridge manually.
 
+<!--
 ### Detection
 
 Intave analyses block placement behavior over longer periods of time (30s-60s).
@@ -17,7 +18,6 @@ Intave analyses block placement behavior over longer periods of time (30s-60s).
 
 PlacementAnalysis is a well-tested check that is able to detect and mitigate most scaffold cheats. 
 
-<!--
 ### Issues
 
 TODO
