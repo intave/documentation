@@ -5,7 +5,7 @@ Support plugin to execute commands on your Bungeecord instance remotely from spi
 
 ## Setup
 
-1. Download the latest Proxy Support `.jar` file from (GitHub)[https://github.com/intave/proxy/releases].
+1. Download the latest Proxy Support `.jar` file from [GitHub](https://github.com/intave/proxy/releases).
 2. Deploy the plugin to your Bungeecord.
 3. **(Optional)** If you want this proxy plugin to be your ban system, you can setup a sql connection in its
    configuration. Otherwise, this plugin will simply execute commands issued by Intave on the Bungeecord, allowing you
