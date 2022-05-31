@@ -73,6 +73,7 @@ thresholds:
 <br>
 <br>
 
+<a name="timer"></a>
 ```yaml
 # The timer check
 timer:
@@ -484,6 +485,7 @@ server and Intave.<br>
 
 <br>
 
+<a name="proxy"></a>
 ```yaml
 # proxy section
 proxy:
