@@ -4,6 +4,7 @@
 `Coverage` Reach, hitbox, block placement cheats<br>
 `Developers` Jpx3<br>
 `Since` Intave 14<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#interactionraytrace)<br>
 
 ### Issue
 When placing, interacting with, or breaking blocks, [players can state](https://wiki.vg/Protocol#Player_Digging) arbitrary block-positions and faces.<br>
