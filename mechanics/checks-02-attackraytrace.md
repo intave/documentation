@@ -4,6 +4,7 @@
 `Coverage` Reach and hitbox cheats<br>
 `Developers` Jpx3, DarkAndBlue<br>
 `Since` Intave 14<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#attackraytrace)<br>
 
 ### Issue
 Reach cheats allow players to attack others from further away, for example from 3.5 blocks.<br>
