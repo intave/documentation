@@ -4,6 +4,7 @@
 `Coverage` Game protocol changes<br>
 `Developers` Jpx3<br>
 `Since` Intave 12<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#protocolscanner)<br>
 
 ### Issue
 

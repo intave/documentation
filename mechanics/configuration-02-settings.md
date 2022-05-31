@@ -73,6 +73,7 @@ thresholds:
 <br>
 <br>
 
+<a name="timer"></a>
 ```yaml
 # The timer check
 timer:
@@ -360,6 +361,7 @@ invokant: false
 `Type:` Boolean<br>
 `Default:` false<br>
 
+<a name="check-sent-slot-twice-vl"></a>
 ```yaml
 check_sent_slot_twice_vl: 100
 ```
@@ -484,6 +486,7 @@ server and Intave.<br>
 
 <br>
 
+<a name="proxy"></a>
 ```yaml
 # proxy section
 proxy:

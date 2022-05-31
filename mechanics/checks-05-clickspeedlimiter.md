@@ -4,6 +4,7 @@
 `Coverage` High click speed<br>
 `Developers` DarkAndBlue<br>
 `Since` Intave 13<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#clickspeedlimiter)<br>
 
 ### Issue
 By using macros or autoclickers, players gain a significant advantage by clicking very fast.

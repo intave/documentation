@@ -4,6 +4,7 @@
 `Coverage` Altered tick speed<br>
 `Developers` Jpx3<br>
 `Since` Intave 13<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#timer)<br>
 
 ### Issue
 Changing the game speed allows players to move and operate faster than usual.

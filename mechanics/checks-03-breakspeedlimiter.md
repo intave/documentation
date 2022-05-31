@@ -4,6 +4,7 @@
 `Coverage` Fastbreak cheats<br>
 `Developers` Jpx3, ventolotl, DarkAndBlue<br>
 `Since` Intave 13<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#breakspeedlimiter)<br>
 
 ### Issue 
 The minecraft protocol gives clients full control over block breaking, including the break-duration. While this allows for fluent gameplay even with high
