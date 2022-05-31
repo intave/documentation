@@ -3,7 +3,6 @@
 The `config.yml` is used to supply Intave with a place to look for
 [settings](configuration-02-settings.md).
 
-
 ### config-identifier
 
 * **Description:** Selected configuration. Enter "file" to use a file configuration
