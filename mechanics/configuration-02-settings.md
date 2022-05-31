@@ -361,6 +361,7 @@ invokant: false
 `Type:` Boolean<br>
 `Default:` false<br>
 
+<a name="check-sent-slot-twice-vl"></a>
 ```yaml
 check_sent_slot_twice_vl: 100
 ```
