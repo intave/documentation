@@ -4,6 +4,7 @@
 `Coverage` InventoryManager and ChestStealer cheats<br>
 `Developers` Jpx3<br>
 `Since` Intave 12<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#inventoryclickanalysis)<br>
 
 ### Issue
 By automatically opening and looting items from chests and automatically sorting their own inventory, cheaters significantly ease their game experience.
