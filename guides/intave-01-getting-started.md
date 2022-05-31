@@ -21,6 +21,10 @@ You have successfully installed Intave, congratulations!
 But we need more step to boot Intave properly.
 <br>
 
+::: tip NOTE
+Current versions of intave automatically download [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) if missing on your server.
+:::
+
 ## Verify
 Before you begin, you must verify the machine you are using.
 ::: tip NOTE
