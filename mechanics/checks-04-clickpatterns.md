@@ -4,6 +4,7 @@
 `Coverage` Click automation cheats<br>
 `Developers` Jpx3, iTz_Lucky<br>
 `Since` Intave 14<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#clickpatterns)<br>
 
 ### Issue
 By using macros or autoclickers, players gain a significant advantage by clicking very fast.

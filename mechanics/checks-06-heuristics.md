@@ -4,6 +4,7 @@
 `Coverage` Combat automation cheats<br>
 `Developers` DarkAndBlue, ventolotl<br>
 `Since` Intave 14<br>
+`Links` [Config](/mechanics/configuration-02-settings.md#heuristics)<br>
 
 ### Issue
 Combat automation cheats like "KillAura" automatically attack other players, often leading to advantages.

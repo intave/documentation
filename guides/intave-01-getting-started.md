@@ -1,8 +1,8 @@
 # Getting started
-### Purchase
+## Purchase
 In case you don't already have Intave, it is available at [https://intave.de](https://intave.de)
 
-### Install
+## Install
 #### Installing Intave with Bootstrap
 1. [Download Intave Bootstrap](https://app.intave.de/download)
 2. Copy the downloaded file into your server's plugin folder.
@@ -21,8 +21,15 @@ You have successfully installed Intave, congratulations!
 But we need more step to boot Intave properly.
 <br>
 
-### Verify
+::: tip NOTE
+Current versions of intave automatically download [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) if missing on your server.
+:::
+
+## Verify
 Before you begin, you must verify the machine you are using.
+::: tip NOTE
+Learn more about machine verifications [here](intave-02-machines.md)
+:::
 
 1. Visit [https://intave.de/hardware](https://app.intave.de/hardware)
 2. Alongside verified hardware, you can see currently pending verification requests.
@@ -40,3 +47,6 @@ All virtual machines on the same root machine should have the same folder mounte
 Virtual machines on different root machines must not share the same folder.<br>
 A [guide](/guides/asset-02-bootstrap.md) is available for Pterodactyl users.
 :::
+
+### Next steps
+Head over to the [configuration](../mechanics/configuration-01-config.md)
