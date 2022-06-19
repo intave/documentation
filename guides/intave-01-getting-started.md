@@ -1,8 +1,8 @@
 # Getting started
-## Purchase
+### Purchase
 In case you don't already have Intave, it is available at [https://intave.de](https://intave.de)
 
-## Install
+### Install
 #### Installing Intave with Bootstrap
 1. [Download Intave Bootstrap](https://app.intave.de/download)
 2. Copy the downloaded file into your server's plugin folder.
@@ -21,7 +21,7 @@ You have successfully installed Intave, congratulations!
 But we need more step to boot Intave properly.
 <br>
 
-## Verify
+### Verify
 Before you begin, you must verify the machine you are using.
 
 1. Visit [https://intave.de/hardware](https://app.intave.de/hardware)

@@ -41,8 +41,8 @@ module.exports = {
         }
     },
     head: [
-        ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/intave_logo.png"}],
-        ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/intave_logo.png"}]
+        ['link', {rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/intave_logo.png"}],
+        ['link', {rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/intave_logo.png"}]
     ]
 }
 

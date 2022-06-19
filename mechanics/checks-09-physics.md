@@ -131,16 +131,25 @@ and much, much more.
 A setback system will correct deviations, mitigating any advantage gained.
 
 ### Mitigation Strategy
-Incorrect movement will lead to an incorrect violation in ~5% of cases and to a correct violation in ~99% of cases.<br>
+Correct movement will lead to a violation in ~5% of cases and incorrect movement to a violation in ~99% of cases.<br>
 For deciding on how aggressive a violation should be translated to a mitigation/setback,
 a set of pre-build mitigation strategies is available:
 
 | Strategy   | Mitigate                          | False negatives | False positives |
 |------------|-----------------------------------|-----------------|-----------------|
-| AGGRESSIVE | all violations                    | ~1%             | ~30%            |
-| CAREFUL    | most violations (default)         | ~5%             | ~20%            |
-| LENIENT    | only highly-suspicious violations | ~60%            | ~5%             |
+| AGGRESSIVE | all violations                    | ~1%             | ~5%             |
+| CAREFUL    | most violations (default)         | ~5%             | ~3%             |
+| LENIENT    | only highly-suspicious violations | ~60%            | ~1%             |
 | SILENT     | only impossible violations        | >99.9%          | 0%              |
+
+#### On AGGRESSIVE, this means:<br>
+
+A false positive requires: <br>
+Correct Movement <b><b>-</b></b>(~5% prefilter)-> Violation <b><b>-</b></b>(~30% buffer)-> Trigger <b><b>-</b></b>(~10% mit strat)-> Mitigation (~0.1% combined)
+<br>
+<br>
+A false negative requires: <br>
+Incorrect Movement <b><b>-</b></b>(~99% prefilter)-> Violation <b><b>-</b></b>(~99% buffer)-> Trigger <b><b>-</b></b>(~99% mit strat)-> Mitigation (~95% combined)
 
 ::: details What is a false negative/positive?
 `False negatives` refers to violations that did not lead to a setback when cheating.<br>
