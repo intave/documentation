@@ -22,7 +22,7 @@ But we need more step to boot Intave properly.
 <br>
 
 ::: tip NOTE
-Current versions of intave automatically download [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) if missing on your server.
+Current versions of Intave automatically download [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) if missing.
 :::
 
 ## Verify
