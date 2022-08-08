@@ -45,7 +45,7 @@ you need to mount the folder ~/.intave/ (in the home directory of the current us
 to a custom, shared folder.
 All virtual machines on the same root machine should have the same folder mounted.
 Virtual machines on different root machines must not share the same folder.<br>
-A [guide](/guides/asset-02-bootstrap.md) is available for Pterodactyl users.
+A [guide](https://docs.intave.de/external/Intave__Pterodactyl_EN.pdf) is available for Pterodactyl users.
 :::
 
 ### Next steps
