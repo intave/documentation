@@ -90,6 +90,22 @@ have a bad internet connection.<br>
 `Default:` false<br>
 
 ```yaml
+reverse-blink: true
+```
+`Name:` reverse-blink<br>
+`Description:` If enabled, Intave stops packets being sent to players likely using blink.<br>
+`Type:` Boolean<br>
+`Default:` true<br>
+
+```yaml
+reverse-lag: false
+```
+`Name:` reverse-lag<br>
+`Description:` If enabled, Intave delays packets being sent to players with a ping far above their average<br>
+`Type:` Boolean<br>
+`Default:` false<br>
+
+```yaml
 thresholds:
   # ...
 ```
