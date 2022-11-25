@@ -8,7 +8,7 @@
 
 ### Issue
 Movement-related cheats allow players to use fly, move faster/slower or ignore knockback.
-The client just [informs the server](https://wiki.vg/Protocol#Player_Position) about its new position, 
+The client just [informs the server](https://wiki.vg/Protocol#Set_Player_Position) about its new position, 
 making it challenging to spot deviations.
 
 ### History
