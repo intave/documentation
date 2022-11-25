@@ -130,9 +130,9 @@ and much, much more.
 
 ### Setbacks
 
-A setback system will correct deviations, mitigating any advantage gained.
+A setback system will correct deviations, mitigating any advantage gained.<br>
+To mitigate incorrect setbacks, a three-layered structure is in place:<br>
 
-To mitigate incorrect setbacks, a three-layered structure is in place:<br><br>
 The first level - called the prefilter, will label correct movement as suspicious in <~5% of cases and incorrect movement as suspicious in >~99% of cases.<br>
 On the second level - called the buffer, a prefilter suspicion will lead to a trigger in <~20% for correct and >~98% on incorrect movement.<br>
 The third level - called the mitigation strategy, is user configurable to allow for custom detection accuracy bounaries.<br>
