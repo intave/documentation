@@ -128,9 +128,12 @@ _effects_ like _speed_ and _jumpboost_<br>
 and much, much more.
 :::
 
+### Setbacks
+
 A setback system will correct deviations, mitigating any advantage gained.
 
-The first level - called the prefilter, will label correct movement as suspicion in <~5% of cases and incorrect movement as suspicious in >~99% of cases.<br>
+To mitigate incorrect setbacks, a three-layered structure is in place:
+The first level - called the prefilter, will label correct movement as suspicious in <~5% of cases and incorrect movement as suspicious in >~99% of cases.<br>
 On the second level - called the buffer, a prefilter suspicion will lead to a trigger in <~20% for correct and >~98% on incorrect movement.<br>
 The third level - called the mitigation strategy, is user configurable to allow for custom detection accuracy bounaries.<br>
 
@@ -143,7 +146,7 @@ a set of pre-build mitigation strategies is available:
 |------------|-----------------------------------|-----------------|-----------------|
 | AGGRESSIVE | all violations                    | ~1%             | ~5%             |
 | CAREFUL    | most violations (default)         | ~5%             | ~3%             |
-| LENIENT    | only highly-suspicious violations | ~60%            | ~1%             |
+| LENIENT    | only highly-suspicious violations | ~35%            | ~1%             |
 | SILENT     | only impossible violations        | >99.9%          | 0%              |
 
 #### On AGGRESSIVE, this means:<br>
