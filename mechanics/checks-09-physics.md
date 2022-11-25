@@ -130,8 +130,12 @@ and much, much more.
 
 A setback system will correct deviations, mitigating any advantage gained.
 
+The first level - called the prefilter, will label correct movement as suspicion in <~5% of cases and incorrect movement as suspicious in >~99% of cases.<br>
+On the second level - called the buffer, a prefilter suspicion will lead to a trigger in <~20% for correct and >~98% on incorrect movement
+The third level - called the mitigation strategy, is user configurable to allow for custom detection accuracy bounaries.
+
 ### Mitigation Strategy
-Correct movement will lead to a violation in ~5% of cases and incorrect movement to a violation in ~99% of cases.<br>
+
 For deciding on how aggressive a violation should be translated to a mitigation/setback,
 a set of pre-build mitigation strategies is available:
 
@@ -145,11 +149,11 @@ a set of pre-build mitigation strategies is available:
 #### On AGGRESSIVE, this means:<br>
 
 A false positive requires: <br>
-Correct Movement <b><b>-</b></b>(~5% prefilter)-> Violation <b><b>-</b></b>(~30% buffer)-> Trigger <b><b>-</b></b>(~10% mit strat)-> Mitigation (~0.1% combined)
+Correct Movement <b><b>-</b></b>(~5% prefilter)-> Violation <b><b>-</b></b>(~5% buffer)-> Trigger <b><b>-</b></b>(~10% mit strat)-> Mitigation (~0.1% combined)
 <br>
 <br>
 A false negative requires: <br>
-Incorrect Movement <b><b>-</b></b>(~99% prefilter)-> Violation <b><b>-</b></b>(~99% buffer)-> Trigger <b><b>-</b></b>(~99% mit strat)-> Mitigation (~95% combined)
+Incorrect Movement <b><b>-</b></b>(~1% prefilter)-> Violation <b><b>-</b></b>(~2% buffer)-> Trigger <b><b>-</b></b>(~1% mit strat)-> Mitigation (~5% combined)
 
 ::: details What is a false negative/positive?
 `False negatives` refers to violations that did not lead to a setback when cheating.<br>
