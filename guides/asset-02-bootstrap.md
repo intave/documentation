@@ -5,14 +5,14 @@ use Intave Bootstrap to automatically download and update Intave for you.
 
 ## Setup
 ### Download
-1. Visit the [download page](https://app.intave.de/download) or [GitHub](https://github.com/intave/bootstrap/releases) to download the latest Bootstrap jar-file.
+1. Visit the [download page](https://intave.ac/download) or [GitHub](https://github.com/intave/bootstrap/releases) to download the latest Bootstrap jar-file.
 2. Copy the jar-file into your server's plugin directory.
 3. Make sure not to have Intave in your plugin folder - you can't start Intave twice.
 
 ### Authorization
 Now you need to authorize Bootstrap to download Intave:
 
-1. Go to your [account settings](https://app.intave.de/me).
+1. Go to your [account settings](https://intave.ac/download).
 2. Copy your authentication key.
 3. Paste the authentication key into the Bootstrap configuration.
 4. Start your server.
