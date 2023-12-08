@@ -17,7 +17,7 @@ To create a mount, you must first log into the administrative backend of your Pt
 
 - Name and description can be freely chosen.
 
-- Enter `/intave` in the **Source** field.
+- Enter `/root/intave` in the **Source** field.
 
 - In the **Target** field, enter `/home/container/?/.intave`
 
