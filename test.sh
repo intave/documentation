@@ -1,1 +1,2 @@
-vuepress dev
+#!/bin/bash
+npm run dev

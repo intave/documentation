@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "markdown-it-footnote": "^3.0.3"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.10"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
   }
 }
