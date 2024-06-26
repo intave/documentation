@@ -1,1 +1,2 @@
-npm install vuepress -g
+#!/bin/bash
+npm install vuepress -D
